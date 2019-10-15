@@ -3,6 +3,7 @@ class Solution:
 
         m, n = len(nums1), len(nums2)
 
+        # base cases
         if m == 0 and n != 0:
             if n % 2 == 1:
                 return nums2[n // 2]
@@ -19,8 +20,10 @@ class Solution:
         i = 0
         j = 0
         result = []
+        midian = (m + n) / 2
 
-        while len(result) <= (m + n) / 2:
+        # loop
+        while len(result) <= midian:
 
             result.append(min(nums1[i], nums2[j]))
 
@@ -37,11 +40,11 @@ class Solution:
                     last_append_j = 1
                 break
 
-        while len(result) <= (m + n) / 2 and last_append_i:
+        while len(result) <= midian and last_append_i:
             result.append(nums2[j])
             j += 1
 
-        while len(result) <= (m + n) / 2 and last_append_j:
+        while len(result) <= midian and last_append_j:
             result.append(nums1[i])
             i += 1
 
