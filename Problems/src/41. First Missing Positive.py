@@ -4,7 +4,6 @@ class Solution:
     Must be O(n) time, O(1) space.
     """
 
-
     def firstMissingPositive(self, nums) -> int:
 
         # empty case
