@@ -5,13 +5,10 @@ from collections import Counter
 
 
 class Solution:
+    """"""
+
+    """O(kN), brute force"""
     # def maxSlidingWindow(self, nums: [int], k: int) -> [int]:
-    #     """
-    #     O(kN), brute force
-    #     :param nums:
-    #     :param k:
-    #     :return:
-    #     """
     #     if not nums:
     #         return None
     #
@@ -22,13 +19,9 @@ class Solution:
     #
     #     return max_w
 
+    """O(k*logk*N), heap"""
     # def maxSlidingWindow(self, nums: [int], k: int) -> [int]:
-    #     """
-    #     O(k*logk*N), heap
-    #     :param nums:
-    #     :param k:
-    #     :return:
-    #     """
+    #
     #     if not nums:
     #         return None
     #

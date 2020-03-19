@@ -53,7 +53,6 @@ class Solution:
         else:
             return sum(result[-2:]) / 2
 
-
 s = Solution()
 print("result:")
 print(1.5, s.findMedianSortedArrays([1,2], []))
