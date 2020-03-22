@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="766eb65a-8252-4728-8244-1f90b6c00731" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/312. Burst Balloons.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/55. Jump Game.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -42,7 +42,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.1143. Longest Common Subsequence">
+  <component name="RunManager" selected="Python.55. Jump Game">
     <configuration name="1143. Longest Common Subsequence" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Problems" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -85,7 +85,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="4. Median of Two Sorted Arrays" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="55. Jump Game" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Problems" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -97,7 +97,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/4. Median of Two Sorted Arrays.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/55. Jump Game.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -150,11 +150,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.55. Jump Game" />
         <item itemvalue="Python.1143. Longest Common Subsequence" />
         <item itemvalue="Python.912. Sort an Array" />
         <item itemvalue="Python.581. Shortest Unsorted Continuous Subarray" />
         <item itemvalue="Python.41. First Missing Positive" />
-        <item itemvalue="Python.4. Median of Two Sorted Arrays" />
       </list>
     </recent_temporary>
   </component>
