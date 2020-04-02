@@ -2,7 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="766eb65a-8252-4728-8244-1f90b6c00731" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/55. Jump Game.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/104. Maximum Depth of Binary Tree.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/136. Single Number.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/17. Letter Combinations of a Phone Number.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/202. Happy Number.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/207. Course Schedule.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/22. Generate Parentheses.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/226. Invert Binary Tree.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/437. Path Sum III.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/49. Group Anagrams.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/5. Longest Palindromic Substring.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/617. Merge Two Binary Trees.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/647. Palindromic Substrings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -42,8 +53,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.55. Jump Game">
-    <configuration name="1143. Longest Common Subsequence" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.5. Longest Palindromic Substring">
+    <configuration name="17. Letter Combinations of a Phone Number" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Problems" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -55,7 +66,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/1143. Longest Common Subsequence.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/17. Letter Combinations of a Phone Number.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -64,7 +75,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="41. First Missing Positive" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="22. Generate Parentheses" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Problems" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -76,7 +87,28 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/41. First Missing Positive.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/22. Generate Parentheses.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="49. Group Anagrams" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Problems" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/49. Group Anagrams.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -106,7 +138,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="581. Shortest Unsorted Continuous Subarray" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="5. Longest Palindromic Substring" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Problems" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -118,28 +150,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/581. Shortest Unsorted Continuous Subarray.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="912. Sort an Array" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Problems" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/912. Sort an Array.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/5. Longest Palindromic Substring.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -150,11 +161,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.5. Longest Palindromic Substring" />
+        <item itemvalue="Python.22. Generate Parentheses" />
+        <item itemvalue="Python.17. Letter Combinations of a Phone Number" />
+        <item itemvalue="Python.49. Group Anagrams" />
         <item itemvalue="Python.55. Jump Game" />
-        <item itemvalue="Python.1143. Longest Common Subsequence" />
-        <item itemvalue="Python.912. Sort an Array" />
-        <item itemvalue="Python.581. Shortest Unsorted Continuous Subarray" />
-        <item itemvalue="Python.41. First Missing Positive" />
       </list>
     </recent_temporary>
   </component>
