@@ -10,8 +10,8 @@ class Solution:
 
             new_n = 0
             while n > 0:
-                new_n += (n % 10) ** 2
-                n //= 10
+                n, digit = divmod(n, 10)
+                new_n += digit ** 2
 
             if new_n in exist:
                 return False
