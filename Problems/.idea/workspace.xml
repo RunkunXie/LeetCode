@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="766eb65a-8252-4728-8244-1f90b6c00731" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/1389. Create Target Array in the Given Order.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/1390. Four Divisors.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/238. Product of Array Except Self.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/46. Permutations.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/78. Subsets.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/202. Happy Number.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/202. Happy Number.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -44,7 +44,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.1389. Create Target Array in the Given Order">
+  <component name="RunManager" selected="Python.46. Permutations">
     <configuration name="1389. Create Target Array in the Given Order" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Problems" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -108,7 +108,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="49. Group Anagrams" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="46. Permutations" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Problems" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -120,7 +120,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/49. Group Anagrams.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/46. Permutations.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -152,11 +152,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.46. Permutations" />
         <item itemvalue="Python.1389. Create Target Array in the Given Order" />
         <item itemvalue="Python.5. Longest Palindromic Substring" />
         <item itemvalue="Python.22. Generate Parentheses" />
         <item itemvalue="Python.17. Letter Combinations of a Phone Number" />
-        <item itemvalue="Python.49. Group Anagrams" />
       </list>
     </recent_temporary>
   </component>
