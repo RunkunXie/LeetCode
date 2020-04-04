@@ -1,8 +1,11 @@
 # %%
+from typing import List
+
+
 class Solution:
     """"""
 
-    """use pop and append"""
+    """use pop and append, time n^2"""
     # def moveZeroes(self, nums) -> None:
     #     """
     #     Do not return anything, modify nums in-place instead.
@@ -22,21 +25,17 @@ class Solution:
     #
     #     return nums
 
-    """use pointers"""
-    def moveZeroes(self, nums) -> None:
+    """use pointers, time n"""
+    def moveZeroes(self, nums: List[int]) -> None:
         """
         Do not return anything, modify nums in-place instead.
         """
-        count = 0
-        n = len(nums)
         l = r = 0
 
-        while r < n:
+        while r < len(nums):
 
             if nums[r] != 0:
-                temp = nums[l]
-                nums[l] = nums[r]
-                nums[r] = temp
+                nums[l], nums[r] = nums[r], nums[l]
                 l += 1
             r += 1
 
