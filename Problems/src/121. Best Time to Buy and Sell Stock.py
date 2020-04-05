@@ -1,8 +1,12 @@
+from typing import List
+
+
 class Solution:
     """"""
 
     """One Pass approach, time n, space 1"""
-    def maxProfit(self, prices) -> int:
+
+    def maxProfit(self, prices: List[int]) -> int:
 
         if not prices:
             return 0
