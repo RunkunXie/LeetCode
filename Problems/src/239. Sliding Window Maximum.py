@@ -19,7 +19,7 @@ class Solution:
     #
     #     return max_w
 
-    """O(k*logk*N), heap"""
+    """O(logk*N), heap"""
     # def maxSlidingWindow(self, nums: [int], k: int) -> [int]:
     #
     #     if not nums:
@@ -41,13 +41,9 @@ class Solution:
     #
     #     return max_element
 
+    """O(N), use list as deque"""
     # def maxSlidingWindow(self, nums: [int], k: int) -> [int]:
-    #     """
-    #     O(N), use list as deque
-    #     :param nums:
-    #     :param k:
-    #     :return:
-    #     """
+    #
     #     # special case 1
     #     if not nums:
     #         return None
@@ -91,13 +87,9 @@ class Solution:
     #
     #     return max_element
 
+    """O(N), deque, intuitive"""
     # def maxSlidingWindow(self, nums: [int], k: int) -> [int]:
-    #     """
-    #     O(N), deque, intuitive
-    #     :param nums:
-    #     :param k:
-    #     :return:
-    #     """
+    #
     #     # special case 1
     #     if not nums:
     #         return None
@@ -141,13 +133,9 @@ class Solution:
     #
     #     return max_element
 
+    """O(N), DP"""
     def maxSlidingWindow(self, nums: [int], k: int) -> [int]:
-        """
-        O(N), DP
-        :param nums:
-        :param k:
-        :return:
-        """
+
         # special case 1
         if not nums:
             return None

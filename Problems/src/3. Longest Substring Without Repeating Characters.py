@@ -1,35 +1,69 @@
+from collections import deque
+
+
 class Solution:
-    #     def lengthOfLongestSubstring(self, s: str) -> int:
+    """"""
 
-    #         if not s:
-    #             return 0
+    """my sol, naive iteration, time n^2"""
+    def lengthOfLongestSubstring(self, s: str) -> int:
 
-    #         n = len(s)
+        if not s:
+            return 0
 
-    #         l, r = 0, 1
+        n = len(s)
 
-    #         result = 1
-    #         crt = 1
+        l, r = 0, 1
 
-    #         while r < n:
+        result = 1
+        crt = 1
 
-    #             r += 1
+        while r < n:
 
-    #             if s[r-1] not in s[l:r]:
-    #                 crt += 1
-    #             else:
-    #                 for i in range(l, r):
-    #                     if s[r-1] not in s[i:r-1]:
-    #                         l = i
-    #                         crt = r - l
-    #                         break
+            r += 1
 
-    #             if crt > result:
-    #                 result += 1
+            if s[r-1] not in s[l:r]:
+                crt += 1
+            else:
+                for i in range(l, r):
+                    if s[r-1] not in s[i:r-1]:
+                        l = i
+                        crt = r - l
+                        break
 
-    #         return result
+            if crt > result:
+                result += 1
 
-    # same ideal, space for time
+        return result
+
+    """my sol, Sliding Window, using HashSet, time 2n"""
+    def lengthOfLongestSubstring(self, s: str) -> int:
+
+        if s is None:
+            return None
+
+        ans = deque([])
+        ans_set = set()
+        length = 0
+        max_len = 0
+
+        for x in s:
+            if x not in ans_set:
+                ans.append(x)
+                ans_set.add(x)
+                length += 1
+                if length > max_len:
+                    max_len = length
+            else:
+                while ans[0] is not x:
+                    ans_set.discard(ans.popleft())
+                    length -= 1
+
+                ans.popleft()
+                ans.append(x)
+
+        return max_len
+
+    """my sol, Sliding Window Optimized, use dict to index, time n, space n"""
     def lengthOfLongestSubstring(self, s: str) -> int:
 
         dic = {}
