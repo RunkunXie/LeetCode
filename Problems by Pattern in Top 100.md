@@ -37,7 +37,7 @@ Middle of the LinkedList (easy)
 
 
 
-## 4. Pattern: Merge Intervals，**区间合并类型**
+## 4. Pattern: Merge Intervals
 
 Merge Intervals (medium)
 
@@ -49,7 +49,7 @@ Conflicting Appointments (medium)
 
 
 
-## 5. Pattern: Cyclic Sort，**循环排序**
+## 5. Pattern: Cyclic Sort
 
 Cyclic Sort (easy)
 

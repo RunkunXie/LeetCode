@@ -24,7 +24,6 @@ class Solution:
     #     return ans
 
     """answer, similar to my solution"""
-
     def canJump(self, nums: List[int]) -> bool:
 
         n = len(nums)
