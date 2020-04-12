@@ -7,6 +7,9 @@ class TreeNode:
 
 
 class Solution:
+    """"""
+
+    """ans, time n"""
     def diameterOfBinaryTree(self, root: TreeNode) -> int:
         self.ans = 0
 
