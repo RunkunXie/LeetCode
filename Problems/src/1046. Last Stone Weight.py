@@ -3,6 +3,9 @@ from typing import List
 
 
 class Solution:
+    """"""
+
+    """my sol, time nlogn"""
     def lastStoneWeight(self, stones: List[int]) -> int:
 
         if not stones:
