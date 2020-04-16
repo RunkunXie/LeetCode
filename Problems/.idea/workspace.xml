@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="766eb65a-8252-4728-8244-1f90b6c00731" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/Problems.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Problems.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/1353. Maximum Number of Events That Can Be Attended.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/678. Valid Parenthesis String.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/OA.AS.5. Sorting Dates.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/OA.AS.5. Sorting Dates.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/OA.AS.6. Process Scheduling.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/OA.AS.6. Process Scheduling.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/OA.AS.7. Meetup Schedule.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/OA.AS.7. Meetup Schedule.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/OA.AS.8. Disk Space Analysis.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/OA.AS.8. Disk Space Analysis.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
