@@ -39,7 +39,6 @@ class Solution:
     #     return ans
 
     """fast online answer, time n^2"""
-
     def threeSum(self, nums: List[int]) -> List[List[int]]:
         res = []
         zero_count = nums.count(0)
