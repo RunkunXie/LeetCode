@@ -1,17 +1,17 @@
-# class Solution:
-#     def minStartValue(self, nums: List[int]) -> int:
-#
-#         if not nums:
-#             return 1
-#
-#         cur_sum = 0
-#         min_sum = 100
-#         for num in nums:
-#             cur_sum += num
-#             min_sum = min(min_sum, cur_sum)
-#             print(cur_sum, min_sum)
-#
-#         return max(- min_sum + 2, 1)
+class Solution:
+    def minStartValue(self, nums: List[int]) -> int:
+
+        if not nums:
+            return 1
+
+        cur_sum = 0
+        min_sum = 100
+        for num in nums:
+            cur_sum += num
+            min_sum = min(min_sum, cur_sum)
+            print(cur_sum, min_sum)
+
+        return max(- min_sum + 2, 1)
 
 #
 # class Solution:
