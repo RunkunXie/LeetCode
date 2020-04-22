@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="766eb65a-8252-4728-8244-1f90b6c00731" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/215. Kth Largest Element in an Array.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/287. Find the Duplicate Number.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/338. Counting Bits.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/347. Top K Frequent Elements.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/LC. Leftmost Column with at Least a One.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
