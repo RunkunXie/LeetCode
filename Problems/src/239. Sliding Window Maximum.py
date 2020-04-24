@@ -2,6 +2,24 @@ from collections import deque
 from typing import List
 
 
+class MonotonicQueue:
+    def __init__(self):
+        self.dq = deque([])
+
+    def push(self, item):
+        while self.dq and item > self.dq[-1]:
+            self.dq.pop()
+
+        self.dq.append(item)
+
+    def pop(self, item):
+        if item == self.dq[0]:
+            self.dq.popleft()
+
+    def max(self):
+        return self.dq[0]
+
+
 class Solution:
     """"""
 
@@ -43,6 +61,26 @@ class Solution:
                 l.popleft()
 
         return ans
+
+    """online sol using MonotonicQueue"""
+    class Solution:
+        def maxSlidingWindow(self, nums: List[int], k: int) -> List[int]:
+            if not nums or not k:
+                return []
+
+            monotonic_q = MonotonicQueue()
+
+            for i in range(k - 1):
+                monotonic_q.push(nums[i])
+
+            result = []
+
+            for i in range(k - 1, len(nums)):
+                monotonic_q.push(nums[i])
+                result.append(monotonic_q.max())
+                monotonic_q.pop(nums[i - k + 1])
+
+            return result
 
     """O(kN), brute force"""
     # def maxSlidingWindow(self, nums: [int], k: int) -> [int]:
