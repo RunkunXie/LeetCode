@@ -1,11 +1,48 @@
-from queue import PriorityQueue
-from heapq import *
 from collections import deque
-from collections import Counter
+from typing import List
 
 
 class Solution:
     """"""
+
+    """my deque sol under hint, time n (140ms beat 99%), best sol"""
+    def maxSlidingWindow(self, nums: List[int], k: int) -> List[int]:
+
+        n = len(nums)
+        if n == k:
+            return [max(nums)]
+
+        l = deque([])
+        ans = []
+
+        for i in range(k - 1):
+
+            # push
+            while l:
+                if l[-1] < nums[i]:
+                    l.pop()
+                else:
+                    break
+            l.append(nums[i])
+
+        for i in range(k - 1, n):
+
+            # push
+            while l:
+                if l[-1] < nums[i]:
+                    l.pop()
+                else:
+                    break
+            l.append(nums[i])
+
+            # ans
+            ans.append(l[0])
+
+            # pop
+            if l[0] == nums[i - k + 1]:
+                l.popleft()
+
+        return ans
 
     """O(kN), brute force"""
     # def maxSlidingWindow(self, nums: [int], k: int) -> [int]:
@@ -134,60 +171,60 @@ class Solution:
     #     return max_element
 
     """O(N), DP"""
-    def maxSlidingWindow(self, nums: [int], k: int) -> [int]:
-
-        # special case 1
-        if not nums:
-            return None
-
-        # special case 2
-        if k == 1:
-            return nums
-
-        # store max element
-        left = []
-        right = []
-        max_element = []
-
-        # left[i]: maximum of block start to nums[i]
-        for i, v in enumerate(nums):
-
-            if i % k == 0:
-                block_max = v
-                left.append(v)
-            else:
-                if v > block_max:
-                    left.append(v)
-                    block_max = v
-                else:
-                    left.append(block_max)
-
-        # right[i]: maximum of nums[i] to block end
-        block_max = nums[-1]
-        for i in range(len(nums) - 1, -1, -1):
-
-            v = nums[i]
-
-            if i % k == k - 1:
-                block_max = v
-                right.append(v)
-            else:
-                if v > block_max:
-                    right.append(v)
-                    block_max = v
-                else:
-                    right.append(block_max)
-        right.reverse()
-
-        # calc max_element
-        for i in range(k - 1, len(nums)):
-
-            if i % k == k - 1:
-                max_element.append(left[i])
-            else:
-                max_element.append(max(left[i], right[i - k + 1]))
-
-        return max_element
+    # def maxSlidingWindow(self, nums: [int], k: int) -> [int]:
+    #
+    #     # special case 1
+    #     if not nums:
+    #         return None
+    #
+    #     # special case 2
+    #     if k == 1:
+    #         return nums
+    #
+    #     # store max element
+    #     left = []
+    #     right = []
+    #     max_element = []
+    #
+    #     # left[i]: maximum of block start to nums[i]
+    #     for i, v in enumerate(nums):
+    #
+    #         if i % k == 0:
+    #             block_max = v
+    #             left.append(v)
+    #         else:
+    #             if v > block_max:
+    #                 left.append(v)
+    #                 block_max = v
+    #             else:
+    #                 left.append(block_max)
+    #
+    #     # right[i]: maximum of nums[i] to block end
+    #     block_max = nums[-1]
+    #     for i in range(len(nums) - 1, -1, -1):
+    #
+    #         v = nums[i]
+    #
+    #         if i % k == k - 1:
+    #             block_max = v
+    #             right.append(v)
+    #         else:
+    #             if v > block_max:
+    #                 right.append(v)
+    #                 block_max = v
+    #             else:
+    #                 right.append(block_max)
+    #     right.reverse()
+    #
+    #     # calc max_element
+    #     for i in range(k - 1, len(nums)):
+    #
+    #         if i % k == k - 1:
+    #             max_element.append(left[i])
+    #         else:
+    #             max_element.append(max(left[i], right[i - k + 1]))
+    #
+    #     return max_element
 
 
 print(Solution().maxSlidingWindow([1, 2, 3, 4, 5], 3), [3, 4, 5])
