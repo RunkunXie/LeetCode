@@ -1,4 +1,6 @@
+# Q3
 class Solution:
+    # Q1419
     def minNumberOfFrogs(self, croakOfFrogs: str) -> int:
 
         max_num, rem = divmod(len(croakOfFrogs), 5)
