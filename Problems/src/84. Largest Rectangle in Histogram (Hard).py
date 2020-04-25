@@ -2,6 +2,25 @@ from typing import List
 
 
 class Solution(object):
+    """my sol under hint, further modified, stack, time n"""
+    class Solution:
+        def largestRectangleArea(self, heights: List[int]) -> int:
+
+            heights.append(0)
+            n = len(heights)
+            ans = 0
+
+            s = [-1]
+
+            for i, h in enumerate(heights):
+
+                while s[-1] != -1 and heights[s[-1]] > h:
+                    ans = max(ans, heights[s.pop()] * (i - s[-1] - 1))
+
+                s.append(i)
+
+            return ans
+
     """my sol under hint, stack, time n"""
     class Solution:
         def largestRectangleArea(self, heights: List[int]) -> int:
