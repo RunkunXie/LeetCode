@@ -2,7 +2,7 @@ from typing import List
 
 
 class Solution(object):
-    """my sol under hint, further modified, stack, time n"""
+    """my sol under hint, further modified by append one zero, stack, time n"""
     class Solution:
         def largestRectangleArea(self, heights: List[int]) -> int:
 
