@@ -10,35 +10,39 @@ class Solution:
     def maxPathSum(self, root) -> int:
 
         def DFS(node):
-
+            """
+            :param node:
+            :return:
+                node_max: max path sum
+                node_max_from_node: max path sum containing current node
+            """
             if not node.left and not node.right:
-
                 return node.val, node.val
 
             elif node.left and not node.right:
                 left_max, left_path = DFS(node.left)
 
-                node_max = node.val + max(left_path, 0)
-                node_down = max(node.val + max(left_path, 0),
-                                left_max)
+                node_max_from_node = node.val + max(left_path, 0)
+                node_max = max(node.val + max(left_path, 0),
+                               left_max)
 
             elif node.right and not node.left:
                 right_max, right_path = DFS(node.right)
-                node_max = node.val + max(right_path, 0)
-                node_down = max(node.val + max(right_path, 0),
-                                right_max)
+                node_max_from_node = node.val + max(right_path, 0)
+                node_max = max(node.val + max(right_path, 0),
+                               right_max)
 
             else:
                 left_max, left_path = DFS(node.left)
                 right_max, right_path = DFS(node.right)
 
-                node_max = max(node.val + max(left_path, 0),
-                               node.val + max(right_path, 0))
-                node_down = max(node.val + max(left_path, 0) + max(right_path, 0),
-                                left_max,
-                                right_max)
+                node_max_from_node = max(node.val + max(left_path, 0),
+                                         node.val + max(right_path, 0))
+                node_max = max(node.val + max(left_path, 0) + max(right_path, 0),
+                               left_max,
+                               right_max)
 
-            return node_down, node_max
+            return node_max, node_max_from_node
 
         return DFS(root)[0]
 
