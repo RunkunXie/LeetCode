@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="766eb65a-8252-4728-8244-1f90b6c00731" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/234. Palindrome Linked List.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/1431. Kids With the Greatest Number of Candies.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/1432. Max Difference You Can Get From Changing an Integer.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/1433. Check If a String Can Break Another String.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/206. Reverse Linked List.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/206. Reverse Linked List.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
