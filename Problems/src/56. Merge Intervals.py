@@ -1,4 +1,5 @@
 class Solution:
+    """my sol, time nlogn"""
     def merge(self, intervals: List[List[int]]) -> List[List[int]]:
 
         intervals = sorted(intervals)
