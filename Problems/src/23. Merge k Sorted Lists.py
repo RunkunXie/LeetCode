@@ -28,42 +28,36 @@ def gen_lists(lists_node: ListNode):
 
 
 class Solution:
-    # def mergeKLists(self, lists: [ListNode]) -> ListNode:
-    #     """
-    #     Ccompare one by one, O(kN)
-    #     :param lists:
-    #     :return:
-    #     """
-    #     head = point = ListNode(0)
-    #
-    #     while lists:
-    #
-    #         tmp_i = 0
-    #         tmp_min = float("inf")
-    #         for i, v in enumerate(lists):
-    #             if v and v.val < tmp_min:
-    #                 tmp_i = i
-    #                 tmp_min = v.val
-    #
-    #         if lists[tmp_i] is None:
-    #             break
-    #
-    #         if lists[tmp_i].next:
-    #             lists[tmp_i] = lists[tmp_i].next
-    #         else:
-    #             lists.pop(tmp_i)
-    #
-    #         point.next = ListNode(tmp_min)
-    #         point = point.next
-    #
-    #     return head.next
 
+    """Ccompare one by one, O(kN)"""
     def mergeKLists(self, lists: [ListNode]) -> ListNode:
-        """
-        Brute Force, O(NlogN)
-        :param lists:
-        :return:
-        """
+
+        head = point = ListNode(0)
+
+        while lists:
+
+            tmp_i = 0
+            tmp_min = float("inf")
+            for i, v in enumerate(lists):
+                if v and v.val < tmp_min:
+                    tmp_i = i
+                    tmp_min = v.val
+
+            if lists[tmp_i] is None:
+                break
+
+            if lists[tmp_i].next:
+                lists[tmp_i] = lists[tmp_i].next
+            else:
+                lists.pop(tmp_i)
+
+            point.next = ListNode(tmp_min)
+            point = point.next
+
+        return head.next
+
+    """Brute Force, O(NlogN)"""
+    def mergeKLists(self, lists: [ListNode]) -> ListNode:
 
         convert_to_list = []
         for v in lists:
@@ -80,30 +74,49 @@ class Solution:
 
         return root.next
 
-    # def mergeKLists(self, lists: [ListNode]) -> ListNode:
-    #     """
-    #     Ccompare one by one, optimize using queue - O(N*logk)
-    #     :param lists:
-    #     :return:
-    #     """
-    #     head = point = ListNode(0)
-    #     q = PriorityQueue()
-    #
-    #     for i, l in enumerate(lists):
-    #         if l:
-    #             q.put((l.val, i, l))
-    #
-    #     while not q.empty():
-    #         val, i, node = q.get()
-    #
-    #         point.next = ListNode(val)
-    #         point = point.next
-    #
-    #         node = node.next
-    #         if node:
-    #             q.put((node.val, i, node))
-    #
-    #     return head.next
+    """my sol, Compare one by one, optimize using heap - O(N*logk)"""
+    def mergeKLists(self, lists: [ListNode]) -> ListNode:
+
+        h = []
+        for i, l in enumerate(lists):
+            if l: heapq.heappush(h, (l.val, i, l.next))
+
+        root = ans = ListNode()
+
+        while h:
+            # pop
+            next_val, i, l = heapq.heappop(h)
+
+            # append to answer
+            ans.next = ListNode(next_val)
+            ans = ans.next
+
+            # push
+            if l: heapq.heappush(h, (l.val, i, l.next))
+
+        return root.next
+
+    """Compare one by one, optimize using queue - O(N*logk)"""
+    def mergeKLists(self, lists: [ListNode]) -> ListNode:
+
+        head = point = ListNode(0)
+        q = PriorityQueue()
+
+        for i, l in enumerate(lists):
+            if l:
+                q.put((l.val, i, l))
+
+        while not q.empty():
+            val, i, node = q.get()
+
+            point.next = ListNode(val)
+            point = point.next
+
+            node = node.next
+            if node:
+                q.put((node.val, i, node))
+
+        return head.next
 
 
 lists = gen_lists_node([[1, 4, 5], [1, 3, 4], [2, 6]])
