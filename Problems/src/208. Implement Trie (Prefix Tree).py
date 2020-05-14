@@ -1,5 +1,5 @@
 class Trie:
-    """my sol, time m"""
+    """my sol - first attempt, time m"""
     def __init__(self):
         """
         Initialize your data structure here.
