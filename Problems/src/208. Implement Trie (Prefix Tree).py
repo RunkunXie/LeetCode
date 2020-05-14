@@ -1,3 +1,7 @@
+"""
+similar questions: 211, 642, 676
+"""
+
 class Trie:
     """my sol - first attempt, time m"""
     def __init__(self):
