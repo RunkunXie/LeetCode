@@ -50,7 +50,6 @@ class Solution:
     #     return result
 
     """ans, Sliding Window"""
-
     def minWindow(self, s: str, t: str) -> str:
 
         if not t or not s:
