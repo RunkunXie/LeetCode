@@ -1,3 +1,5 @@
+"""Biweekly Contest 26 - Q2"""
+
 class Solution:
     """my sol - 1 attempt, time n^2 * logn"""
     def simplifiedFractions(self, n: int) -> List[str]:
