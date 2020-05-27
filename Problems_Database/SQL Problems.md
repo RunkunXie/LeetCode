@@ -1,3 +1,13 @@
+#### Progress
+
+##### By Difficulty
+
+Easy: 176, 175, 181, 1179
+
+Mid: 177
+
+
+
 ##### \175. Combine Two Tables
 
 ```mysql
@@ -69,6 +79,30 @@ SELECT E1.Name as Employee
     JOIN Employee as E2 ON E1.ManagerId = E2.Id
     WHERE E1.Salary > E2.Salary
 ;
+```
+
+
+
+##### \183. Customers Who Never Order
+
+```mysql
+# Write your MySQL query statement below
+# my JOIN sol
+
+SELECT Name as Customers
+    FROM Customers as C
+    LEFT JOIN Orders as O ON C.Id = O.CustomerId
+    WHERE ISNULL(O.Id)
+```
+
+```mysql
+# ans, subselect
+
+select customers.name as 'Customers'
+from customers
+where customers.id not in (
+    select customerid from orders
+);
 ```
 
 
