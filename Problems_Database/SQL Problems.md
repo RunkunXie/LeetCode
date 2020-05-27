@@ -2,7 +2,7 @@
 
 ##### By Difficulty
 
-Easy: 176, 175, 181, 1179 | 183, 196, 182
+Easy: 176, 175, 181, 1179 | 183, 196, 182, 1241
 
 Mid: 177 | 178
 
@@ -81,6 +81,18 @@ SELECT S1.Score, COUNT(S2.Score) AS "Rank"
     WHERE S1.Score <= S2.Score
     GROUP BY S1.Id 
     ORDER BY S1.Score DESC
+```
+
+```mysql
+# online sol w. variable
+
+SELECT
+    Score,
+    @rank := @rank + (@prev <> (@prev := Score)) "Rank"
+FROM
+    Scores,
+    (SELECT @rank := 0, @prev := -1) init
+ORDER BY Score DESC
 ```
 
 
@@ -210,4 +222,17 @@ GROUP BY id
 ```
 
 
+
+##### \1241. Number of Comments per Post
+
+```mysql
+# my sol under hint
+
+SELECT DISTINCT
+    S1.sub_id AS post_id,
+    (SELECT COUNT(DISTINCT(S2.sub_id)) FROM Submissions AS S2 WHERE S2.parent_id = S1.sub_id) AS number_of_comments
+FROM Submissions AS S1
+WHERE parent_id IS NULL
+ORDER BY post_id
+```
 
