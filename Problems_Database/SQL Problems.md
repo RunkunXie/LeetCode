@@ -2,16 +2,16 @@
 
 ##### By Difficulty
 
-Easy: 176, 175, 181, 1179
+Easy: 176, 175, 181, 1179 | 183, 196, 182
 
-Mid: 177
+Mid: 177 | 178
 
 
 
 ##### \175. Combine Two Tables
 
 ```mysql
-# Write your MySQL query statement below
+# my sol
 
 SELECT p.firstname, p.lastname, a.city, a.state
     FROM person as p
@@ -25,7 +25,7 @@ SELECT p.firstname, p.lastname, a.city, a.state
 ##### \176. Second Highest Salary
 
 ```mysql
-# Write your MySQL query statement below
+# ans Subselect
 
 SELECT
     (SELECT DISTINCT Salary
@@ -36,7 +36,7 @@ SELECT
 ```
 
 ```mysql
-# Write your MySQL query statement below
+# ans IFNULL
 
 SELECT
     IFNULL(
@@ -52,7 +52,7 @@ SELECT
 ##### \177. Nth Highest Salary
 
 ```mysql
-# Write your MySQL query statement below
+# online sol
 
 CREATE FUNCTION getNthHighestSalary(N INT) RETURNS INT
 BEGIN
@@ -69,10 +69,26 @@ END
 
 
 
+##### \178. Rank Scores
+
+```mysql
+# online sol
+
+SELECT S1.Score, COUNT(S2.Score) AS "Rank"
+    FROM 
+        Scores AS S1,
+        (SELECT DISTINCT Score FROM Scores) AS S2
+    WHERE S1.Score <= S2.Score
+    GROUP BY S1.Id 
+    ORDER BY S1.Score DESC
+```
+
+
+
 ##### \181. Employees Earning More Than Their Managers
 
 ```mysql
-# Write your MySQL query statement below
+# my sol
 
 SELECT E1.Name as Employee
     FROM Employee as E1
@@ -83,10 +99,30 @@ SELECT E1.Name as Employee
 
 
 
+##### \182. Duplicate Emails
+
+```mysql
+# my sol
+
+SELECT DISTINCT p1.Email
+    FROM Person as P1, Person as P2
+    WHERE P1.Email = P2.Email and P1.ID != P2.ID
+```
+
+```mysql
+# GROUP BY, HAVING sol
+
+select Email
+from Person
+group by Email
+having count(Email) > 1;
+```
+
+
+
 ##### \183. Customers Who Never Order
 
 ```mysql
-# Write your MySQL query statement below
 # my JOIN sol
 
 SELECT Name as Customers
@@ -107,10 +143,20 @@ where customers.id not in (
 
 
 
+##### \196. Delete Duplicate Emails
+
+```mysql
+# ans
+
+DELETE p1 FROM Person p1, Person p2
+    WHERE p1.Email = p2.Email AND p1.Id > p2.Id
+```
+
+
+
 ##### \1179. Reformat Department Table
 
 ```mysql
-# Write your MySQL query statement below
 # my JOIN sol
 
 SELECT DISTINCT
@@ -143,7 +189,6 @@ FROM Department as D
 ```
 
 ```mysql
-# Write your MySQL query statement below
 # online GROUP BY sol
 
 SELECT DISTINCT 
