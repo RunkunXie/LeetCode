@@ -93,7 +93,6 @@ SELECT DISTINCT
     D10.revenue as Oct_Revenue,
     D11.revenue as Nov_Revenue,
     D12.revenue as Dec_Revenue
-
 FROM Department as D
     LEFT JOIN (SELECT DISTINCT id, revenue FROM Department WHERE month = 'Jan') as D1 ON D.id = D1.id
     LEFT JOIN (SELECT DISTINCT id, revenue FROM Department WHERE month = 'Feb') as D2 ON D.id = D2.id
