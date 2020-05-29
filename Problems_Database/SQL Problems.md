@@ -96,6 +96,20 @@ ORDER BY Score DESC
 
 
 
+##### \180. Consecutive Numbers
+
+```mysql
+# MY JOIN SOL
+
+SELECT DISTINCT L1.NUM AS ConsecutiveNums
+    FROM LOGS AS L1
+    JOIN LOGS AS L2 ON L1.ID = L2.ID + 1
+    JOIN LOGS AS L3 ON L1.ID = L3.ID - 1
+    WHERE L1.NUM = L2.NUM AND L2.NUM = L3.NUM 
+```
+
+
+
 ##### \181. Employees Earning More Than Their Managers
 
 ```mysql
