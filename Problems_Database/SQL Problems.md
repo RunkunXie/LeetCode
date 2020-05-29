@@ -2,7 +2,7 @@
 
 ##### By Difficulty
 
-Easy: 176, 175, 181, 1179 | 183, 196, 182, 1241
+Easy: 176, 175, 181, 1179 | 183, 196, 182, 1241 | 197, 603, 597, 1142
 
 Mid: 177 | 178
 
@@ -16,7 +16,6 @@ Mid: 177 | 178
 SELECT p.firstname, p.lastname, a.city, a.state
     FROM person as p
     LEFT JOIN address as a ON p.personid = a.personid
-
 ;
 ```
 
@@ -166,6 +165,92 @@ DELETE p1 FROM Person p1, Person p2
 
 
 
+##### \197. Rising Temperature
+
+```mysql
+# my sol under online hint, 436ms
+
+SELECT W1.ID 
+FROM WEATHER AS W1, WEATHER AS W2 
+WHERE W2.RecordDate = ADDDATE(W1.RecordDate, INTERVAL -1 DAY) AND W1.Temperature > W2.temperature
+```
+
+```mysql
+# ans, 888ms
+
+SELECT W1.ID
+    FROM WEATHER AS W1
+    JOIN WEATHER AS W2 
+        ON W2.RecordDate = ADDDATE(W1.RecordDate, INTERVAL -1 DAY) 
+            AND W1.Temperature > W2.temperature
+```
+
+
+
+##### \597. Friend Requests I: Overall Acceptance Rate
+
+```mysql
+# my CASE sol
+
+SELECT (
+    CASE
+        WHEN COUNT(R.sender_id) = 0 THEN 0
+        ELSE
+            ROUND(COUNT(DISTINCT A.requester_id, A.accepter_id) / 
+                 COUNT(DISTINCT R.sender_id, R.send_to_id), 2) 
+    END) AS accept_rate
+    FROM request_accepted AS A, friend_request AS R
+```
+
+```mysql
+# answer, IFNULL
+
+SELECT (
+    IFNULL(ROUND(COUNT(DISTINCT A.requester_id, A.accepter_id) / 
+                 COUNT(DISTINCT R.sender_id, R.send_to_id), 2), 0)) AS accept_rate
+    FROM request_accepted AS A, friend_request AS R
+```
+
+
+
+##### \603. Consecutive Available Seats
+
+```mysql
+# my sol
+
+SELECT C1.SEAT_ID, C2.SEAT_ID, C3.SEAT_ID
+    FROM CINEMA AS C1
+    LEFT JOIN CINEMA AS C2 ON C2.SEAT_ID - 1 = C1.SEAT_ID
+    LEFT JOIN CINEMA AS C3 ON C3.SEAT_ID + 1 = C1.SEAT_ID 
+    WHERE C1.FREE = 1 AND (C2.FREE = 1 OR C3.FREE = 1)
+    ORDER BY C1.SEAT_ID
+```
+
+```mysql
+# ans using JOIN, ABS
+SELECT DISTINCT C1.SEAT_ID
+    FROM CINEMA AS C1
+    JOIN CINEMA AS C2 
+    ON ABS(C2.SEAT_ID - C1.SEAT_ID) = 1
+    WHERE C1.FREE = 1 AND C2.FREE = 1
+    ORDER BY C1.SEAT_ID
+```
+
+
+
+##### \1142. User Activity for the Past 30 Days II
+
+```mysql
+# ONLINE SOL
+
+SELECT IFNULL(ROUND(COUNT(DISTINCT session_id) / COUNT(DISTINCT user_id), 2), 0) 
+    AS average_sessions_per_user
+    FROM Activity
+    WHERE DATEDIFF("2019-07-27", activity_date) < 30
+```
+
+
+
 ##### \1179. Reformat Department Table
 
 ```mysql
@@ -234,5 +319,19 @@ SELECT DISTINCT
 FROM Submissions AS S1
 WHERE parent_id IS NULL
 ORDER BY post_id
+```
+
+
+
+##### \1350. Students With Invalid Departments
+
+```mysql
+# MY SOL
+
+SELECT ID, NAME
+    FROM STUDENTS
+    WHERE department_id NOT IN (
+        SELECT ID FROM DEPARTMENTS
+    )
 ```
 
