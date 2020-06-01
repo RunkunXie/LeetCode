@@ -7,6 +7,8 @@
 //
 
 #include <iostream>
+#include <vector>
+using namespace std;
 
 class Solution {
 public:
@@ -21,3 +23,13 @@ public:
         return ans;
     }
 };
+
+int main() {
+    
+    Solution s;
+    vector<int> v = {1,1,2,2,3,3,4,5,5};
+    
+    cout << s.singleNumber(v) << endl;
+    
+};
+
