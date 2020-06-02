@@ -2,18 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="766eb65a-8252-4728-8244-1f90b6c00731" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Lint 458. Last Position of Target.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Problems_cpp/237. Delete Node in a Linked List/main.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Lint 159. Find Minimum in Rotated Sorted Array.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Problems_cpp/Problems_cpp.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/../Problems_cpp/Problems_cpp.xcodeproj/project.pbxproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/34. Find First and Last Position of Element in Sorted Array.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/34. Find First and Last Position of Element in Sorted Array.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Problems_cpp/Problems_cpp.xcodeproj/project.xcworkspace/xcuserdata/vincentxie.xcuserdatad/UserInterfaceState.xcuserstate" beforeDir="false" afterPath="$PROJECT_DIR$/../Problems_cpp/Problems_cpp.xcodeproj/project.xcworkspace/xcuserdata/vincentxie.xcuserdatad/UserInterfaceState.xcuserstate" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Problems_cpp/Problems_cpp.xcodeproj/xcuserdata/vincentxie.xcuserdatad/xcschemes/xcschememanagement.plist" beforeDir="false" afterPath="$PROJECT_DIR$/../Problems_cpp/Problems_cpp.xcodeproj/xcuserdata/vincentxie.xcuserdatad/xcschemes/xcschememanagement.plist" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="Problems" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">

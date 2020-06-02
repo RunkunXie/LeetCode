@@ -1,4 +1,7 @@
 class Solution:
+
+    """Note: check my sol c++ for better solution"""
+
     """my sol, time logn + 2log(n/2)"""
     def searchRange(self, nums: List[int], target: int) -> List[int]:
 
