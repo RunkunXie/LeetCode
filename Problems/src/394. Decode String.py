@@ -3,8 +3,8 @@ class Solution:
 
     def decodeString(self, s: str) -> str:
 
-        stack = [];
-        curNum = 0;
+        stack = []
+        curNum = 0
         curString = ''
         for c in s:
             if c == '[':
