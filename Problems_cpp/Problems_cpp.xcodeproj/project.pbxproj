@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		8F3295592481E01900A0D11E /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8F3295582481E01900A0D11E /* main.cpp */; };
 		8F3296C82485ADA000A0D11E /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8F3296C72485ADA000A0D11E /* main.cpp */; };
+		8F3296D32486B43A00A0D11E /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8F3296D22486B43A00A0D11E /* main.cpp */; };
+		8F3296DE2486FA2700A0D11E /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8F3296DD2486FA2700A0D11E /* main.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -30,6 +32,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
+		8F3296CE2486B43A00A0D11E /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		8F3296D92486FA2700A0D11E /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +57,10 @@
 		8F3295582481E01900A0D11E /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		8F3296C52485ADA000A0D11E /* 1. Two Sum */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "1. Two Sum"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F3296C72485ADA000A0D11E /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		8F3296D02486B43A00A0D11E /* 237. Delete Node in a Linked List */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "237. Delete Node in a Linked List"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F3296D22486B43A00A0D11E /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		8F3296DB2486FA2700A0D11E /* 34. Find First and Last Position of Element in Sorted Array */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "34. Find First and Last Position of Element in Sorted Array"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F3296DD2486FA2700A0D11E /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +78,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8F3296CD2486B43A00A0D11E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F3296D82486FA2700A0D11E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -62,6 +100,8 @@
 			children = (
 				8F3295572481E01900A0D11E /* 136. Single Number */,
 				8F3296C62485ADA000A0D11E /* 1. Two Sum */,
+				8F3296D12486B43A00A0D11E /* 237. Delete Node in a Linked List */,
+				8F3296DC2486FA2700A0D11E /* 34. Find First and Last Position of Element in Sorted Array */,
 				8F3295492481DFFC00A0D11E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -71,6 +111,8 @@
 			children = (
 				8F3295562481E01900A0D11E /* 136. Single Number */,
 				8F3296C52485ADA000A0D11E /* 1. Two Sum */,
+				8F3296D02486B43A00A0D11E /* 237. Delete Node in a Linked List */,
+				8F3296DB2486FA2700A0D11E /* 34. Find First and Last Position of Element in Sorted Array */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -89,6 +131,22 @@
 				8F3296C72485ADA000A0D11E /* main.cpp */,
 			);
 			path = "1. Two Sum";
+			sourceTree = "<group>";
+		};
+		8F3296D12486B43A00A0D11E /* 237. Delete Node in a Linked List */ = {
+			isa = PBXGroup;
+			children = (
+				8F3296D22486B43A00A0D11E /* main.cpp */,
+			);
+			path = "237. Delete Node in a Linked List";
+			sourceTree = "<group>";
+		};
+		8F3296DC2486FA2700A0D11E /* 34. Find First and Last Position of Element in Sorted Array */ = {
+			isa = PBXGroup;
+			children = (
+				8F3296DD2486FA2700A0D11E /* main.cpp */,
+			);
+			path = "34. Find First and Last Position of Element in Sorted Array";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,6 +186,40 @@
 			productReference = 8F3296C52485ADA000A0D11E /* 1. Two Sum */;
 			productType = "com.apple.product-type.tool";
 		};
+		8F3296CF2486B43A00A0D11E /* 237. Delete Node in a Linked List */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8F3296D62486B43A00A0D11E /* Build configuration list for PBXNativeTarget "237. Delete Node in a Linked List" */;
+			buildPhases = (
+				8F3296CC2486B43A00A0D11E /* Sources */,
+				8F3296CD2486B43A00A0D11E /* Frameworks */,
+				8F3296CE2486B43A00A0D11E /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "237. Delete Node in a Linked List";
+			productName = "237. Delete Node in a Linked List";
+			productReference = 8F3296D02486B43A00A0D11E /* 237. Delete Node in a Linked List */;
+			productType = "com.apple.product-type.tool";
+		};
+		8F3296DA2486FA2700A0D11E /* 34. Find First and Last Position of Element in Sorted Array */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8F3296DF2486FA2700A0D11E /* Build configuration list for PBXNativeTarget "34. Find First and Last Position of Element in Sorted Array" */;
+			buildPhases = (
+				8F3296D72486FA2700A0D11E /* Sources */,
+				8F3296D82486FA2700A0D11E /* Frameworks */,
+				8F3296D92486FA2700A0D11E /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "34. Find First and Last Position of Element in Sorted Array";
+			productName = "34. Find First and Last Position of Element in Sorted Array";
+			productReference = 8F3296DB2486FA2700A0D11E /* 34. Find First and Last Position of Element in Sorted Array */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -141,6 +233,12 @@
 						CreatedOnToolsVersion = 11.4.1;
 					};
 					8F3296C42485ADA000A0D11E = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
+					8F3296CF2486B43A00A0D11E = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
+					8F3296DA2486FA2700A0D11E = {
 						CreatedOnToolsVersion = 11.4.1;
 					};
 				};
@@ -160,6 +258,8 @@
 			targets = (
 				8F3295552481E01900A0D11E /* 136. Single Number */,
 				8F3296C42485ADA000A0D11E /* 1. Two Sum */,
+				8F3296CF2486B43A00A0D11E /* 237. Delete Node in a Linked List */,
+				8F3296DA2486FA2700A0D11E /* 34. Find First and Last Position of Element in Sorted Array */,
 			);
 		};
 /* End PBXProject section */
@@ -178,6 +278,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				8F3296C82485ADA000A0D11E /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F3296CC2486B43A00A0D11E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F3296D32486B43A00A0D11E /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F3296D72486FA2700A0D11E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F3296DE2486FA2700A0D11E /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -325,6 +441,38 @@
 			};
 			name = Release;
 		};
+		8F3296D42486B43A00A0D11E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		8F3296D52486B43A00A0D11E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		8F3296E02486FA2700A0D11E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		8F3296E12486FA2700A0D11E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -351,6 +499,24 @@
 			buildConfigurations = (
 				8F3296C92485ADA000A0D11E /* Debug */,
 				8F3296CA2485ADA000A0D11E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8F3296D62486B43A00A0D11E /* Build configuration list for PBXNativeTarget "237. Delete Node in a Linked List" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8F3296D42486B43A00A0D11E /* Debug */,
+				8F3296D52486B43A00A0D11E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8F3296DF2486FA2700A0D11E /* Build configuration list for PBXNativeTarget "34. Find First and Last Position of Element in Sorted Array" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8F3296E02486FA2700A0D11E /* Debug */,
+				8F3296E12486FA2700A0D11E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
