@@ -1,5 +1,5 @@
 class Solution:
-    """my first attemp, not good way for partition"""
+    """my first attempt, not good way for partition"""
     # def searchMatrix(self, matrix, target):
     #     """
     #     :type matrix: List[List[int]]
