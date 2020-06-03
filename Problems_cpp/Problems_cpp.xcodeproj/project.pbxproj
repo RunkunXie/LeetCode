@@ -11,6 +11,7 @@
 		8F3296C82485ADA000A0D11E /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8F3296C72485ADA000A0D11E /* main.cpp */; };
 		8F3296D32486B43A00A0D11E /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8F3296D22486B43A00A0D11E /* main.cpp */; };
 		8F3296DE2486FA2700A0D11E /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8F3296DD2486FA2700A0D11E /* main.cpp */; };
+		8F3296E92487FB2E00A0D11E /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8F3296E82487FB2E00A0D11E /* main.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -50,6 +51,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
+		8F3296E42487FB2E00A0D11E /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -61,6 +71,8 @@
 		8F3296D22486B43A00A0D11E /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		8F3296DB2486FA2700A0D11E /* 34. Find First and Last Position of Element in Sorted Array */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "34. Find First and Last Position of Element in Sorted Array"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F3296DD2486FA2700A0D11E /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		8F3296E62487FB2E00A0D11E /* 1029. Two City Scheduling */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "1029. Two City Scheduling"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F3296E82487FB2E00A0D11E /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +104,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8F3296E32487FB2E00A0D11E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -102,6 +121,7 @@
 				8F3296C62485ADA000A0D11E /* 1. Two Sum */,
 				8F3296D12486B43A00A0D11E /* 237. Delete Node in a Linked List */,
 				8F3296DC2486FA2700A0D11E /* 34. Find First and Last Position of Element in Sorted Array */,
+				8F3296E72487FB2E00A0D11E /* 1029. Two City Scheduling */,
 				8F3295492481DFFC00A0D11E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -113,6 +133,7 @@
 				8F3296C52485ADA000A0D11E /* 1. Two Sum */,
 				8F3296D02486B43A00A0D11E /* 237. Delete Node in a Linked List */,
 				8F3296DB2486FA2700A0D11E /* 34. Find First and Last Position of Element in Sorted Array */,
+				8F3296E62487FB2E00A0D11E /* 1029. Two City Scheduling */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -147,6 +168,14 @@
 				8F3296DD2486FA2700A0D11E /* main.cpp */,
 			);
 			path = "34. Find First and Last Position of Element in Sorted Array";
+			sourceTree = "<group>";
+		};
+		8F3296E72487FB2E00A0D11E /* 1029. Two City Scheduling */ = {
+			isa = PBXGroup;
+			children = (
+				8F3296E82487FB2E00A0D11E /* main.cpp */,
+			);
+			path = "1029. Two City Scheduling";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,6 +249,23 @@
 			productReference = 8F3296DB2486FA2700A0D11E /* 34. Find First and Last Position of Element in Sorted Array */;
 			productType = "com.apple.product-type.tool";
 		};
+		8F3296E52487FB2E00A0D11E /* 1029. Two City Scheduling */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8F3296EA2487FB2E00A0D11E /* Build configuration list for PBXNativeTarget "1029. Two City Scheduling" */;
+			buildPhases = (
+				8F3296E22487FB2E00A0D11E /* Sources */,
+				8F3296E32487FB2E00A0D11E /* Frameworks */,
+				8F3296E42487FB2E00A0D11E /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "1029. Two City Scheduling";
+			productName = "1029. Two City Scheduling";
+			productReference = 8F3296E62487FB2E00A0D11E /* 1029. Two City Scheduling */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -241,6 +287,9 @@
 					8F3296DA2486FA2700A0D11E = {
 						CreatedOnToolsVersion = 11.4.1;
 					};
+					8F3296E52487FB2E00A0D11E = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
 				};
 			};
 			buildConfigurationList = 8F3295432481DFFC00A0D11E /* Build configuration list for PBXProject "Problems_cpp" */;
@@ -260,6 +309,7 @@
 				8F3296C42485ADA000A0D11E /* 1. Two Sum */,
 				8F3296CF2486B43A00A0D11E /* 237. Delete Node in a Linked List */,
 				8F3296DA2486FA2700A0D11E /* 34. Find First and Last Position of Element in Sorted Array */,
+				8F3296E52487FB2E00A0D11E /* 1029. Two City Scheduling */,
 			);
 		};
 /* End PBXProject section */
@@ -294,6 +344,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				8F3296DE2486FA2700A0D11E /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F3296E22487FB2E00A0D11E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F3296E92487FB2E00A0D11E /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -473,6 +531,22 @@
 			};
 			name = Release;
 		};
+		8F3296EB2487FB2E00A0D11E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		8F3296EC2487FB2E00A0D11E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -517,6 +591,15 @@
 			buildConfigurations = (
 				8F3296E02486FA2700A0D11E /* Debug */,
 				8F3296E12486FA2700A0D11E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8F3296EA2487FB2E00A0D11E /* Build configuration list for PBXNativeTarget "1029. Two City Scheduling" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8F3296EB2487FB2E00A0D11E /* Debug */,
+				8F3296EC2487FB2E00A0D11E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
