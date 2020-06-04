@@ -1,6 +1,5 @@
 class Solution:
     """online dp sol, time n^2"""
-
     def lengthOfLIS(self, nums: List[int]) -> int:
 
         if not nums:

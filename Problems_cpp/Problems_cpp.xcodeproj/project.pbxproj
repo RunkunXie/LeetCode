@@ -13,6 +13,9 @@
 		8F3296DE2486FA2700A0D11E /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8F3296DD2486FA2700A0D11E /* main.cpp */; };
 		8F3296E92487FB2E00A0D11E /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8F3296E82487FB2E00A0D11E /* main.cpp */; };
 		8F3296F42488363A00A0D11E /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8F3296F32488363A00A0D11E /* main.cpp */; };
+		8F3296FF24883CC300A0D11E /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8F3296FE24883CC300A0D11E /* main.cpp */; };
+		8F32972C2488B9FA00A0D11E /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8F32972B2488B9FA00A0D11E /* main.cpp */; };
+		8F3297382488C2A100A0D11E /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8F3297372488C2A100A0D11E /* main.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -70,6 +73,33 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
+		8F3296FA24883CC300A0D11E /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		8F3297272488B9FA00A0D11E /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		8F3297332488C2A100A0D11E /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -85,6 +115,12 @@
 		8F3296E82487FB2E00A0D11E /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		8F3296F12488363A00A0D11E /* 74. Search a 2D Matrix */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "74. Search a 2D Matrix"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F3296F32488363A00A0D11E /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		8F3296FC24883CC300A0D11E /* 668. Kth Smallest Number in Multiplication Table */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "668. Kth Smallest Number in Multiplication Table"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F3296FE24883CC300A0D11E /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		8F3297292488B9FA00A0D11E /* 300. Longest Increasing Subsequence */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "300. Longest Increasing Subsequence"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F32972B2488B9FA00A0D11E /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		8F3297352488C2A100A0D11E /* 416. Partition Equal Subset Sum */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "416. Partition Equal Subset Sum"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F3297372488C2A100A0D11E /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +166,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8F3296F924883CC300A0D11E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F3297262488B9FA00A0D11E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F3297322488C2A100A0D11E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -142,6 +199,9 @@
 				8F3296DC2486FA2700A0D11E /* 34. Find First and Last Position of Element in Sorted Array */,
 				8F3296E72487FB2E00A0D11E /* 1029. Two City Scheduling */,
 				8F3296F22488363A00A0D11E /* 74. Search a 2D Matrix */,
+				8F3296FD24883CC300A0D11E /* 668. Kth Smallest Number in Multiplication Table */,
+				8F32972A2488B9FA00A0D11E /* 300. Longest Increasing Subsequence */,
+				8F3297362488C2A100A0D11E /* 416. Partition Equal Subset Sum */,
 				8F3295492481DFFC00A0D11E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -155,6 +215,9 @@
 				8F3296DB2486FA2700A0D11E /* 34. Find First and Last Position of Element in Sorted Array */,
 				8F3296E62487FB2E00A0D11E /* 1029. Two City Scheduling */,
 				8F3296F12488363A00A0D11E /* 74. Search a 2D Matrix */,
+				8F3296FC24883CC300A0D11E /* 668. Kth Smallest Number in Multiplication Table */,
+				8F3297292488B9FA00A0D11E /* 300. Longest Increasing Subsequence */,
+				8F3297352488C2A100A0D11E /* 416. Partition Equal Subset Sum */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -205,6 +268,30 @@
 				8F3296F32488363A00A0D11E /* main.cpp */,
 			);
 			path = "74. Search a 2D Matrix";
+			sourceTree = "<group>";
+		};
+		8F3296FD24883CC300A0D11E /* 668. Kth Smallest Number in Multiplication Table */ = {
+			isa = PBXGroup;
+			children = (
+				8F3296FE24883CC300A0D11E /* main.cpp */,
+			);
+			path = "668. Kth Smallest Number in Multiplication Table";
+			sourceTree = "<group>";
+		};
+		8F32972A2488B9FA00A0D11E /* 300. Longest Increasing Subsequence */ = {
+			isa = PBXGroup;
+			children = (
+				8F32972B2488B9FA00A0D11E /* main.cpp */,
+			);
+			path = "300. Longest Increasing Subsequence";
+			sourceTree = "<group>";
+		};
+		8F3297362488C2A100A0D11E /* 416. Partition Equal Subset Sum */ = {
+			isa = PBXGroup;
+			children = (
+				8F3297372488C2A100A0D11E /* main.cpp */,
+			);
+			path = "416. Partition Equal Subset Sum";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -312,6 +399,57 @@
 			productReference = 8F3296F12488363A00A0D11E /* 74. Search a 2D Matrix */;
 			productType = "com.apple.product-type.tool";
 		};
+		8F3296FB24883CC300A0D11E /* 668. Kth Smallest Number in Multiplication Table */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8F32970024883CC300A0D11E /* Build configuration list for PBXNativeTarget "668. Kth Smallest Number in Multiplication Table" */;
+			buildPhases = (
+				8F3296F824883CC300A0D11E /* Sources */,
+				8F3296F924883CC300A0D11E /* Frameworks */,
+				8F3296FA24883CC300A0D11E /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "668. Kth Smallest Number in Multiplication Table";
+			productName = "668. Kth Smallest Number in Multiplication Table";
+			productReference = 8F3296FC24883CC300A0D11E /* 668. Kth Smallest Number in Multiplication Table */;
+			productType = "com.apple.product-type.tool";
+		};
+		8F3297282488B9FA00A0D11E /* 300. Longest Increasing Subsequence */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8F32972D2488B9FA00A0D11E /* Build configuration list for PBXNativeTarget "300. Longest Increasing Subsequence" */;
+			buildPhases = (
+				8F3297252488B9FA00A0D11E /* Sources */,
+				8F3297262488B9FA00A0D11E /* Frameworks */,
+				8F3297272488B9FA00A0D11E /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "300. Longest Increasing Subsequence";
+			productName = "300. Longest Increasing Subsequence";
+			productReference = 8F3297292488B9FA00A0D11E /* 300. Longest Increasing Subsequence */;
+			productType = "com.apple.product-type.tool";
+		};
+		8F3297342488C2A100A0D11E /* 416. Partition Equal Subset Sum */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8F3297392488C2A100A0D11E /* Build configuration list for PBXNativeTarget "416. Partition Equal Subset Sum" */;
+			buildPhases = (
+				8F3297312488C2A100A0D11E /* Sources */,
+				8F3297322488C2A100A0D11E /* Frameworks */,
+				8F3297332488C2A100A0D11E /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "416. Partition Equal Subset Sum";
+			productName = "416. Partition Equal Subset Sum";
+			productReference = 8F3297352488C2A100A0D11E /* 416. Partition Equal Subset Sum */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -339,6 +477,15 @@
 					8F3296F02488363A00A0D11E = {
 						CreatedOnToolsVersion = 11.4.1;
 					};
+					8F3296FB24883CC300A0D11E = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
+					8F3297282488B9FA00A0D11E = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
+					8F3297342488C2A100A0D11E = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
 				};
 			};
 			buildConfigurationList = 8F3295432481DFFC00A0D11E /* Build configuration list for PBXProject "Problems_cpp" */;
@@ -360,6 +507,9 @@
 				8F3296DA2486FA2700A0D11E /* 34. Find First and Last Position of Element in Sorted Array */,
 				8F3296E52487FB2E00A0D11E /* 1029. Two City Scheduling */,
 				8F3296F02488363A00A0D11E /* 74. Search a 2D Matrix */,
+				8F3296FB24883CC300A0D11E /* 668. Kth Smallest Number in Multiplication Table */,
+				8F3297282488B9FA00A0D11E /* 300. Longest Increasing Subsequence */,
+				8F3297342488C2A100A0D11E /* 416. Partition Equal Subset Sum */,
 			);
 		};
 /* End PBXProject section */
@@ -410,6 +560,30 @@
 			buildActionMask = 2147483647;
 			files = (
 				8F3296F42488363A00A0D11E /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F3296F824883CC300A0D11E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F3296FF24883CC300A0D11E /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F3297252488B9FA00A0D11E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F32972C2488B9FA00A0D11E /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F3297312488C2A100A0D11E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F3297382488C2A100A0D11E /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -621,6 +795,54 @@
 			};
 			name = Release;
 		};
+		8F32970124883CC300A0D11E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		8F32970224883CC300A0D11E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		8F32972E2488B9FA00A0D11E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		8F32972F2488B9FA00A0D11E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		8F32973A2488C2A100A0D11E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		8F32973B2488C2A100A0D11E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -683,6 +905,33 @@
 			buildConfigurations = (
 				8F3296F62488363A00A0D11E /* Debug */,
 				8F3296F72488363A00A0D11E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8F32970024883CC300A0D11E /* Build configuration list for PBXNativeTarget "668. Kth Smallest Number in Multiplication Table" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8F32970124883CC300A0D11E /* Debug */,
+				8F32970224883CC300A0D11E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8F32972D2488B9FA00A0D11E /* Build configuration list for PBXNativeTarget "300. Longest Increasing Subsequence" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8F32972E2488B9FA00A0D11E /* Debug */,
+				8F32972F2488B9FA00A0D11E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8F3297392488C2A100A0D11E /* Build configuration list for PBXNativeTarget "416. Partition Equal Subset Sum" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8F32973A2488C2A100A0D11E /* Debug */,
+				8F32973B2488C2A100A0D11E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
