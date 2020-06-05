@@ -20,6 +20,7 @@
 		8F32976D248999AC00A0D11E /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8F32976C248999AC00A0D11E /* main.cpp */; };
 		8F3297782489CA8200A0D11E /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8F3297772489CA8200A0D11E /* main.cpp */; };
 		8F329784248AAB0500A0D11E /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8F329783248AAB0500A0D11E /* main.cpp */; };
+		8F32978F248AFAE800A0D11E /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8F32978E248AFAE800A0D11E /* main.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -140,6 +141,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
+		8F32978A248AFAE700A0D11E /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -169,6 +179,8 @@
 		8F3297772489CA8200A0D11E /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		8F329781248AAB0500A0D11E /* 528. Random Pick with Weight */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "528. Random Pick with Weight"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F329783248AAB0500A0D11E /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		8F32978C248AFAE700A0D11E /* 50. Pow(x, n) */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "50. Pow(x, n)"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F32978E248AFAE800A0D11E /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -263,6 +275,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8F329789248AFAE700A0D11E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -282,6 +301,7 @@
 				8F32976B248999AC00A0D11E /* GTS Practice */,
 				8F3297762489CA8200A0D11E /* 1128. Number of Equivalent Domino Pairs */,
 				8F329782248AAB0500A0D11E /* 528. Random Pick with Weight */,
+				8F32978D248AFAE800A0D11E /* 50. Pow(x, n) */,
 				8F3295492481DFFC00A0D11E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -302,6 +322,7 @@
 				8F32976A248999AC00A0D11E /* GTS Practice */,
 				8F3297752489CA8200A0D11E /* 1128. Number of Equivalent Domino Pairs */,
 				8F329781248AAB0500A0D11E /* 528. Random Pick with Weight */,
+				8F32978C248AFAE700A0D11E /* 50. Pow(x, n) */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -408,6 +429,14 @@
 				8F329783248AAB0500A0D11E /* main.cpp */,
 			);
 			path = "528. Random Pick with Weight";
+			sourceTree = "<group>";
+		};
+		8F32978D248AFAE800A0D11E /* 50. Pow(x, n) */ = {
+			isa = PBXGroup;
+			children = (
+				8F32978E248AFAE800A0D11E /* main.cpp */,
+			);
+			path = "50. Pow(x, n)";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -634,6 +663,23 @@
 			productReference = 8F329781248AAB0500A0D11E /* 528. Random Pick with Weight */;
 			productType = "com.apple.product-type.tool";
 		};
+		8F32978B248AFAE700A0D11E /* 50. Pow(x, n) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8F329790248AFAE800A0D11E /* Build configuration list for PBXNativeTarget "50. Pow(x, n)" */;
+			buildPhases = (
+				8F329788248AFAE700A0D11E /* Sources */,
+				8F329789248AFAE700A0D11E /* Frameworks */,
+				8F32978A248AFAE700A0D11E /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "50. Pow(x, n)";
+			productName = "50. Pow(x, n)";
+			productReference = 8F32978C248AFAE700A0D11E /* 50. Pow(x, n) */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -682,6 +728,9 @@
 					8F329780248AAB0500A0D11E = {
 						CreatedOnToolsVersion = 11.4.1;
 					};
+					8F32978B248AFAE700A0D11E = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
 				};
 			};
 			buildConfigurationList = 8F3295432481DFFC00A0D11E /* Build configuration list for PBXProject "Problems_cpp" */;
@@ -710,6 +759,7 @@
 				8F329769248999AC00A0D11E /* GTS Practice */,
 				8F3297742489CA8200A0D11E /* 1128. Number of Equivalent Domino Pairs */,
 				8F329780248AAB0500A0D11E /* 528. Random Pick with Weight */,
+				8F32978B248AFAE700A0D11E /* 50. Pow(x, n) */,
 			);
 		};
 /* End PBXProject section */
@@ -816,6 +866,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				8F329784248AAB0500A0D11E /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F329788248AFAE700A0D11E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F32978F248AFAE800A0D11E /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1139,6 +1197,22 @@
 			};
 			name = Release;
 		};
+		8F329791248AFAE800A0D11E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		8F329792248AFAE800A0D11E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1264,6 +1338,15 @@
 			buildConfigurations = (
 				8F329786248AAB0500A0D11E /* Debug */,
 				8F329787248AAB0500A0D11E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8F329790248AFAE800A0D11E /* Build configuration list for PBXNativeTarget "50. Pow(x, n)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8F329791248AFAE800A0D11E /* Debug */,
+				8F329792248AFAE800A0D11E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
