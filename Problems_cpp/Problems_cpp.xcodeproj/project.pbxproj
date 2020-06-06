@@ -23,6 +23,7 @@
 		8F32978F248AFAE800A0D11E /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8F32978E248AFAE800A0D11E /* main.cpp */; };
 		8F32979A248B2A9A00A0D11E /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8F329799248B2A9A00A0D11E /* main.cpp */; };
 		8F3297A5248B52B200A0D11E /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8F3297A4248B52B200A0D11E /* main.cpp */; };
+		8F3297B0248B584F00A0D11E /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8F3297AF248B584F00A0D11E /* main.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -170,6 +171,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
+		8F3297AB248B584F00A0D11E /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -205,6 +215,8 @@
 		8F329799248B2A9A00A0D11E /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		8F3297A2248B52B200A0D11E /* 739. Daily Temperatures */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "739. Daily Temperatures"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F3297A4248B52B200A0D11E /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		8F3297AD248B584F00A0D11E /* 986. Interval List Intersections */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "986. Interval List Intersections"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F3297AF248B584F00A0D11E /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -320,6 +332,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8F3297AA248B584F00A0D11E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -342,6 +361,7 @@
 				8F32978D248AFAE800A0D11E /* 50. Pow(x, n) */,
 				8F329798248B2A9A00A0D11E /* 14. Longest Common Prefix */,
 				8F3297A3248B52B200A0D11E /* 739. Daily Temperatures */,
+				8F3297AE248B584F00A0D11E /* 986. Interval List Intersections */,
 				8F3295492481DFFC00A0D11E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -365,6 +385,7 @@
 				8F32978C248AFAE700A0D11E /* 50. Pow(x, n) */,
 				8F329797248B2A9A00A0D11E /* 14. Longest Common Prefix */,
 				8F3297A2248B52B200A0D11E /* 739. Daily Temperatures */,
+				8F3297AD248B584F00A0D11E /* 986. Interval List Intersections */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -495,6 +516,14 @@
 				8F3297A4248B52B200A0D11E /* main.cpp */,
 			);
 			path = "739. Daily Temperatures";
+			sourceTree = "<group>";
+		};
+		8F3297AE248B584F00A0D11E /* 986. Interval List Intersections */ = {
+			isa = PBXGroup;
+			children = (
+				8F3297AF248B584F00A0D11E /* main.cpp */,
+			);
+			path = "986. Interval List Intersections";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -772,6 +801,23 @@
 			productReference = 8F3297A2248B52B200A0D11E /* 739. Daily Temperatures */;
 			productType = "com.apple.product-type.tool";
 		};
+		8F3297AC248B584F00A0D11E /* 986. Interval List Intersections */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8F3297B1248B584F00A0D11E /* Build configuration list for PBXNativeTarget "986. Interval List Intersections" */;
+			buildPhases = (
+				8F3297A9248B584F00A0D11E /* Sources */,
+				8F3297AA248B584F00A0D11E /* Frameworks */,
+				8F3297AB248B584F00A0D11E /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "986. Interval List Intersections";
+			productName = "986. Interval List Intersections";
+			productReference = 8F3297AD248B584F00A0D11E /* 986. Interval List Intersections */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -829,6 +875,9 @@
 					8F3297A1248B52B200A0D11E = {
 						CreatedOnToolsVersion = 11.4.1;
 					};
+					8F3297AC248B584F00A0D11E = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
 				};
 			};
 			buildConfigurationList = 8F3295432481DFFC00A0D11E /* Build configuration list for PBXProject "Problems_cpp" */;
@@ -860,6 +909,7 @@
 				8F32978B248AFAE700A0D11E /* 50. Pow(x, n) */,
 				8F329796248B2A9A00A0D11E /* 14. Longest Common Prefix */,
 				8F3297A1248B52B200A0D11E /* 739. Daily Temperatures */,
+				8F3297AC248B584F00A0D11E /* 986. Interval List Intersections */,
 			);
 		};
 /* End PBXProject section */
@@ -990,6 +1040,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				8F3297A5248B52B200A0D11E /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F3297A9248B584F00A0D11E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F3297B0248B584F00A0D11E /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1361,6 +1419,22 @@
 			};
 			name = Release;
 		};
+		8F3297B2248B584F00A0D11E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		8F3297B3248B584F00A0D11E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1513,6 +1587,15 @@
 			buildConfigurations = (
 				8F3297A7248B52B200A0D11E /* Debug */,
 				8F3297A8248B52B200A0D11E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8F3297B1248B584F00A0D11E /* Build configuration list for PBXNativeTarget "986. Interval List Intersections" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8F3297B2248B584F00A0D11E /* Debug */,
+				8F3297B3248B584F00A0D11E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
