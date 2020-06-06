@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="766eb65a-8252-4728-8244-1f90b6c00731" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../Problems_cpp/14. Longest Common Prefix/main.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Problems_cpp/739. Daily Temperatures/main.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Problems_cpp/Problems_cpp.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/../Problems_cpp/Problems_cpp.xcodeproj/project.pbxproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Problems_cpp/Problems_cpp.xcodeproj/project.xcworkspace/xcuserdata/vincentxie.xcuserdatad/UserInterfaceState.xcuserstate" beforeDir="false" afterPath="$PROJECT_DIR$/../Problems_cpp/Problems_cpp.xcodeproj/project.xcworkspace/xcuserdata/vincentxie.xcuserdatad/UserInterfaceState.xcuserstate" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Problems_cpp/Problems_cpp.xcodeproj/xcuserdata/vincentxie.xcuserdatad/xcschemes/xcschememanagement.plist" beforeDir="false" afterPath="$PROJECT_DIR$/../Problems_cpp/Problems_cpp.xcodeproj/xcuserdata/vincentxie.xcuserdatad/xcschemes/xcschememanagement.plist" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />

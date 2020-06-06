@@ -24,6 +24,7 @@
 		8F32979A248B2A9A00A0D11E /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8F329799248B2A9A00A0D11E /* main.cpp */; };
 		8F3297A5248B52B200A0D11E /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8F3297A4248B52B200A0D11E /* main.cpp */; };
 		8F3297B0248B584F00A0D11E /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8F3297AF248B584F00A0D11E /* main.cpp */; };
+		8F3297BB248BF30100A0D11E /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8F3297BA248BF30100A0D11E /* main.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -180,6 +181,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
+		8F3297B6248BF30100A0D11E /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -217,6 +227,8 @@
 		8F3297A4248B52B200A0D11E /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		8F3297AD248B584F00A0D11E /* 986. Interval List Intersections */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "986. Interval List Intersections"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F3297AF248B584F00A0D11E /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		8F3297B8248BF30100A0D11E /* 406. Queue Reconstruction by Height */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "406. Queue Reconstruction by Height"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F3297BA248BF30100A0D11E /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -339,6 +351,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8F3297B5248BF30100A0D11E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -362,6 +381,7 @@
 				8F329798248B2A9A00A0D11E /* 14. Longest Common Prefix */,
 				8F3297A3248B52B200A0D11E /* 739. Daily Temperatures */,
 				8F3297AE248B584F00A0D11E /* 986. Interval List Intersections */,
+				8F3297B9248BF30100A0D11E /* 406. Queue Reconstruction by Height */,
 				8F3295492481DFFC00A0D11E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -386,6 +406,7 @@
 				8F329797248B2A9A00A0D11E /* 14. Longest Common Prefix */,
 				8F3297A2248B52B200A0D11E /* 739. Daily Temperatures */,
 				8F3297AD248B584F00A0D11E /* 986. Interval List Intersections */,
+				8F3297B8248BF30100A0D11E /* 406. Queue Reconstruction by Height */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -524,6 +545,14 @@
 				8F3297AF248B584F00A0D11E /* main.cpp */,
 			);
 			path = "986. Interval List Intersections";
+			sourceTree = "<group>";
+		};
+		8F3297B9248BF30100A0D11E /* 406. Queue Reconstruction by Height */ = {
+			isa = PBXGroup;
+			children = (
+				8F3297BA248BF30100A0D11E /* main.cpp */,
+			);
+			path = "406. Queue Reconstruction by Height";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -818,6 +847,23 @@
 			productReference = 8F3297AD248B584F00A0D11E /* 986. Interval List Intersections */;
 			productType = "com.apple.product-type.tool";
 		};
+		8F3297B7248BF30100A0D11E /* 406. Queue Reconstruction by Height */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8F3297BC248BF30100A0D11E /* Build configuration list for PBXNativeTarget "406. Queue Reconstruction by Height" */;
+			buildPhases = (
+				8F3297B4248BF30100A0D11E /* Sources */,
+				8F3297B5248BF30100A0D11E /* Frameworks */,
+				8F3297B6248BF30100A0D11E /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "406. Queue Reconstruction by Height";
+			productName = "406. Queue Reconstruction by Height";
+			productReference = 8F3297B8248BF30100A0D11E /* 406. Queue Reconstruction by Height */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -878,6 +924,9 @@
 					8F3297AC248B584F00A0D11E = {
 						CreatedOnToolsVersion = 11.4.1;
 					};
+					8F3297B7248BF30100A0D11E = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
 				};
 			};
 			buildConfigurationList = 8F3295432481DFFC00A0D11E /* Build configuration list for PBXProject "Problems_cpp" */;
@@ -910,6 +959,7 @@
 				8F329796248B2A9A00A0D11E /* 14. Longest Common Prefix */,
 				8F3297A1248B52B200A0D11E /* 739. Daily Temperatures */,
 				8F3297AC248B584F00A0D11E /* 986. Interval List Intersections */,
+				8F3297B7248BF30100A0D11E /* 406. Queue Reconstruction by Height */,
 			);
 		};
 /* End PBXProject section */
@@ -1048,6 +1098,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				8F3297B0248B584F00A0D11E /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F3297B4248BF30100A0D11E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F3297BB248BF30100A0D11E /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1435,6 +1493,22 @@
 			};
 			name = Release;
 		};
+		8F3297BD248BF30100A0D11E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		8F3297BE248BF30100A0D11E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1596,6 +1670,15 @@
 			buildConfigurations = (
 				8F3297B2248B584F00A0D11E /* Debug */,
 				8F3297B3248B584F00A0D11E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8F3297BC248BF30100A0D11E /* Build configuration list for PBXNativeTarget "406. Queue Reconstruction by Height" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8F3297BD248BF30100A0D11E /* Debug */,
+				8F3297BE248BF30100A0D11E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
