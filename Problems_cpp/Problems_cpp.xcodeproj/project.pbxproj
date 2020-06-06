@@ -25,6 +25,10 @@
 		8F3297A5248B52B200A0D11E /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8F3297A4248B52B200A0D11E /* main.cpp */; };
 		8F3297B0248B584F00A0D11E /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8F3297AF248B584F00A0D11E /* main.cpp */; };
 		8F3297BB248BF30100A0D11E /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8F3297BA248BF30100A0D11E /* main.cpp */; };
+		8F3297C6248BFC3D00A0D11E /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8F3297C5248BFC3D00A0D11E /* main.cpp */; };
+		8F3297D1248C0D8800A0D11E /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8F3297D0248C0D8800A0D11E /* main.cpp */; };
+		8F3297DC248C5CD800A0D11E /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8F3297DB248C5CD800A0D11E /* main.cpp */; };
+		8F3297E7248C5D1500A0D11E /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8F3297E6248C5D1500A0D11E /* main.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -190,6 +194,42 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
+		8F3297C1248BFC3D00A0D11E /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		8F3297CC248C0D8800A0D11E /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		8F3297D7248C5CD800A0D11E /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		8F3297E2248C5D1500A0D11E /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -229,6 +269,14 @@
 		8F3297AF248B584F00A0D11E /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		8F3297B8248BF30100A0D11E /* 406. Queue Reconstruction by Height */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "406. Queue Reconstruction by Height"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F3297BA248BF30100A0D11E /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		8F3297C3248BFC3D00A0D11E /* 101. Symmetric Tree */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "101. Symmetric Tree"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F3297C5248BFC3D00A0D11E /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		8F3297CE248C0D8800A0D11E /* 463. Island Perimeter */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "463. Island Perimeter"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F3297D0248C0D8800A0D11E /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		8F3297D9248C5CD800A0D11E /* 1465. Maximum Area of a Piece of Cake After Horizontal and Vertical Cuts */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "1465. Maximum Area of a Piece of Cake After Horizontal and Vertical Cuts"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F3297DB248C5CD800A0D11E /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		8F3297E4248C5D1500A0D11E /* 1466. Reorder Routes to Make All Paths Lead to the City Zero */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "1466. Reorder Routes to Make All Paths Lead to the City Zero"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F3297E6248C5D1500A0D11E /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -358,6 +406,34 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8F3297C0248BFC3D00A0D11E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F3297CB248C0D8800A0D11E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F3297D6248C5CD800A0D11E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F3297E1248C5D1500A0D11E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -382,6 +458,10 @@
 				8F3297A3248B52B200A0D11E /* 739. Daily Temperatures */,
 				8F3297AE248B584F00A0D11E /* 986. Interval List Intersections */,
 				8F3297B9248BF30100A0D11E /* 406. Queue Reconstruction by Height */,
+				8F3297C4248BFC3D00A0D11E /* 101. Symmetric Tree */,
+				8F3297CF248C0D8800A0D11E /* 463. Island Perimeter */,
+				8F3297DA248C5CD800A0D11E /* 1465. Maximum Area of a Piece of Cake After Horizontal and Vertical Cuts */,
+				8F3297E5248C5D1500A0D11E /* 1466. Reorder Routes to Make All Paths Lead to the City Zero */,
 				8F3295492481DFFC00A0D11E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -407,6 +487,10 @@
 				8F3297A2248B52B200A0D11E /* 739. Daily Temperatures */,
 				8F3297AD248B584F00A0D11E /* 986. Interval List Intersections */,
 				8F3297B8248BF30100A0D11E /* 406. Queue Reconstruction by Height */,
+				8F3297C3248BFC3D00A0D11E /* 101. Symmetric Tree */,
+				8F3297CE248C0D8800A0D11E /* 463. Island Perimeter */,
+				8F3297D9248C5CD800A0D11E /* 1465. Maximum Area of a Piece of Cake After Horizontal and Vertical Cuts */,
+				8F3297E4248C5D1500A0D11E /* 1466. Reorder Routes to Make All Paths Lead to the City Zero */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -553,6 +637,38 @@
 				8F3297BA248BF30100A0D11E /* main.cpp */,
 			);
 			path = "406. Queue Reconstruction by Height";
+			sourceTree = "<group>";
+		};
+		8F3297C4248BFC3D00A0D11E /* 101. Symmetric Tree */ = {
+			isa = PBXGroup;
+			children = (
+				8F3297C5248BFC3D00A0D11E /* main.cpp */,
+			);
+			path = "101. Symmetric Tree";
+			sourceTree = "<group>";
+		};
+		8F3297CF248C0D8800A0D11E /* 463. Island Perimeter */ = {
+			isa = PBXGroup;
+			children = (
+				8F3297D0248C0D8800A0D11E /* main.cpp */,
+			);
+			path = "463. Island Perimeter";
+			sourceTree = "<group>";
+		};
+		8F3297DA248C5CD800A0D11E /* 1465. Maximum Area of a Piece of Cake After Horizontal and Vertical Cuts */ = {
+			isa = PBXGroup;
+			children = (
+				8F3297DB248C5CD800A0D11E /* main.cpp */,
+			);
+			path = "1465. Maximum Area of a Piece of Cake After Horizontal and Vertical Cuts";
+			sourceTree = "<group>";
+		};
+		8F3297E5248C5D1500A0D11E /* 1466. Reorder Routes to Make All Paths Lead to the City Zero */ = {
+			isa = PBXGroup;
+			children = (
+				8F3297E6248C5D1500A0D11E /* main.cpp */,
+			);
+			path = "1466. Reorder Routes to Make All Paths Lead to the City Zero";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -864,6 +980,74 @@
 			productReference = 8F3297B8248BF30100A0D11E /* 406. Queue Reconstruction by Height */;
 			productType = "com.apple.product-type.tool";
 		};
+		8F3297C2248BFC3D00A0D11E /* 101. Symmetric Tree */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8F3297C7248BFC3D00A0D11E /* Build configuration list for PBXNativeTarget "101. Symmetric Tree" */;
+			buildPhases = (
+				8F3297BF248BFC3D00A0D11E /* Sources */,
+				8F3297C0248BFC3D00A0D11E /* Frameworks */,
+				8F3297C1248BFC3D00A0D11E /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "101. Symmetric Tree";
+			productName = "101. Symmetric Tree";
+			productReference = 8F3297C3248BFC3D00A0D11E /* 101. Symmetric Tree */;
+			productType = "com.apple.product-type.tool";
+		};
+		8F3297CD248C0D8800A0D11E /* 463. Island Perimeter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8F3297D2248C0D8800A0D11E /* Build configuration list for PBXNativeTarget "463. Island Perimeter" */;
+			buildPhases = (
+				8F3297CA248C0D8800A0D11E /* Sources */,
+				8F3297CB248C0D8800A0D11E /* Frameworks */,
+				8F3297CC248C0D8800A0D11E /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "463. Island Perimeter";
+			productName = "463. Island Perimeter";
+			productReference = 8F3297CE248C0D8800A0D11E /* 463. Island Perimeter */;
+			productType = "com.apple.product-type.tool";
+		};
+		8F3297D8248C5CD800A0D11E /* 1465. Maximum Area of a Piece of Cake After Horizontal and Vertical Cuts */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8F3297DF248C5CD800A0D11E /* Build configuration list for PBXNativeTarget "1465. Maximum Area of a Piece of Cake After Horizontal and Vertical Cuts" */;
+			buildPhases = (
+				8F3297D5248C5CD800A0D11E /* Sources */,
+				8F3297D6248C5CD800A0D11E /* Frameworks */,
+				8F3297D7248C5CD800A0D11E /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "1465. Maximum Area of a Piece of Cake After Horizontal and Vertical Cuts";
+			productName = "1465. Maximum Area of a Piece of Cake After Horizontal and Vertical Cuts";
+			productReference = 8F3297D9248C5CD800A0D11E /* 1465. Maximum Area of a Piece of Cake After Horizontal and Vertical Cuts */;
+			productType = "com.apple.product-type.tool";
+		};
+		8F3297E3248C5D1500A0D11E /* 1466. Reorder Routes to Make All Paths Lead to the City Zero */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8F3297E8248C5D1500A0D11E /* Build configuration list for PBXNativeTarget "1466. Reorder Routes to Make All Paths Lead to the City Zero" */;
+			buildPhases = (
+				8F3297E0248C5D1500A0D11E /* Sources */,
+				8F3297E1248C5D1500A0D11E /* Frameworks */,
+				8F3297E2248C5D1500A0D11E /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "1466. Reorder Routes to Make All Paths Lead to the City Zero";
+			productName = "1466. Reorder Routes to Make All Paths Lead to the City Zero";
+			productReference = 8F3297E4248C5D1500A0D11E /* 1466. Reorder Routes to Make All Paths Lead to the City Zero */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -927,6 +1111,18 @@
 					8F3297B7248BF30100A0D11E = {
 						CreatedOnToolsVersion = 11.4.1;
 					};
+					8F3297C2248BFC3D00A0D11E = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
+					8F3297CD248C0D8800A0D11E = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
+					8F3297D8248C5CD800A0D11E = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
+					8F3297E3248C5D1500A0D11E = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
 				};
 			};
 			buildConfigurationList = 8F3295432481DFFC00A0D11E /* Build configuration list for PBXProject "Problems_cpp" */;
@@ -960,6 +1156,10 @@
 				8F3297A1248B52B200A0D11E /* 739. Daily Temperatures */,
 				8F3297AC248B584F00A0D11E /* 986. Interval List Intersections */,
 				8F3297B7248BF30100A0D11E /* 406. Queue Reconstruction by Height */,
+				8F3297C2248BFC3D00A0D11E /* 101. Symmetric Tree */,
+				8F3297CD248C0D8800A0D11E /* 463. Island Perimeter */,
+				8F3297D8248C5CD800A0D11E /* 1465. Maximum Area of a Piece of Cake After Horizontal and Vertical Cuts */,
+				8F3297E3248C5D1500A0D11E /* 1466. Reorder Routes to Make All Paths Lead to the City Zero */,
 			);
 		};
 /* End PBXProject section */
@@ -1106,6 +1306,38 @@
 			buildActionMask = 2147483647;
 			files = (
 				8F3297BB248BF30100A0D11E /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F3297BF248BFC3D00A0D11E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F3297C6248BFC3D00A0D11E /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F3297CA248C0D8800A0D11E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F3297D1248C0D8800A0D11E /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F3297D5248C5CD800A0D11E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F3297DC248C5CD800A0D11E /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F3297E0248C5D1500A0D11E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F3297E7248C5D1500A0D11E /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1509,6 +1741,70 @@
 			};
 			name = Release;
 		};
+		8F3297C8248BFC3D00A0D11E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		8F3297C9248BFC3D00A0D11E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		8F3297D3248C0D8800A0D11E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		8F3297D4248C0D8800A0D11E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		8F3297DD248C5CD800A0D11E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		8F3297DE248C5CD800A0D11E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		8F3297E9248C5D1500A0D11E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		8F3297EA248C5D1500A0D11E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1679,6 +1975,42 @@
 			buildConfigurations = (
 				8F3297BD248BF30100A0D11E /* Debug */,
 				8F3297BE248BF30100A0D11E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8F3297C7248BFC3D00A0D11E /* Build configuration list for PBXNativeTarget "101. Symmetric Tree" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8F3297C8248BFC3D00A0D11E /* Debug */,
+				8F3297C9248BFC3D00A0D11E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8F3297D2248C0D8800A0D11E /* Build configuration list for PBXNativeTarget "463. Island Perimeter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8F3297D3248C0D8800A0D11E /* Debug */,
+				8F3297D4248C0D8800A0D11E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8F3297DF248C5CD800A0D11E /* Build configuration list for PBXNativeTarget "1465. Maximum Area of a Piece of Cake After Horizontal and Vertical Cuts" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8F3297DD248C5CD800A0D11E /* Debug */,
+				8F3297DE248C5CD800A0D11E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8F3297E8248C5D1500A0D11E /* Build configuration list for PBXNativeTarget "1466. Reorder Routes to Make All Paths Lead to the City Zero" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8F3297E9248C5D1500A0D11E /* Debug */,
+				8F3297EA248C5D1500A0D11E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

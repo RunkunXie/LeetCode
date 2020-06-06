@@ -8,6 +8,7 @@
 
 #include <iostream>
 
+// my sol
 class Solution {
 public:
     vector<vector<int>> reconstructQueue(vector<vector<int>>& people) {
@@ -29,8 +30,28 @@ public:
     }
 };
 
+// ans
+class Solution {
+public:
+    vector<vector<int>> reconstructQueue(vector<vector<int>>& people) {
+        
+        sort(people.begin(), people.end(), [](vector<int> v1, vector<int> v2) {
+            return v1[0] == v2[0] ? v1[1] < v2[1] : v1[0] > v2[0];
+        });
+            
+        vector<vector<int>> ans = {};
+        for (auto p : people) {
+            ans.insert(ans.begin() + p[1], p);
+        }
+        
+        return ans;
+    }
+};
+
 int main(int argc, const char * argv[]) {
     // insert code here...
     std::cout << "Hello, World!\n";
+    
+    
     return 0;
 }

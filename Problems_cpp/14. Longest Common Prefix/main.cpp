@@ -60,5 +60,17 @@ int main(int argc, const char * argv[]) {
     };
     cout << s.longestCommonPrefix(strs) << endl;
     
+    bool b1 = -1;
+    cout << b1 << endl;
+
+    b1 = 0;
+    cout << b1 << endl;
+    
+    b1 = -2;
+    cout << b1 << endl;
+    
+    b1 = 2;
+    cout << b1 << endl;
+    
     return 0;
 }
