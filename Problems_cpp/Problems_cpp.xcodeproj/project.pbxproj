@@ -21,6 +21,8 @@
 		8F3297782489CA8200A0D11E /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8F3297772489CA8200A0D11E /* main.cpp */; };
 		8F329784248AAB0500A0D11E /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8F329783248AAB0500A0D11E /* main.cpp */; };
 		8F32978F248AFAE800A0D11E /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8F32978E248AFAE800A0D11E /* main.cpp */; };
+		8F32979A248B2A9A00A0D11E /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8F329799248B2A9A00A0D11E /* main.cpp */; };
+		8F3297A5248B52B200A0D11E /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8F3297A4248B52B200A0D11E /* main.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -150,6 +152,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
+		8F329795248B2A9A00A0D11E /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		8F3297A0248B52B200A0D11E /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -181,6 +201,10 @@
 		8F329783248AAB0500A0D11E /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		8F32978C248AFAE700A0D11E /* 50. Pow(x, n) */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "50. Pow(x, n)"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F32978E248AFAE800A0D11E /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		8F329797248B2A9A00A0D11E /* 14. Longest Common Prefix */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "14. Longest Common Prefix"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F329799248B2A9A00A0D11E /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		8F3297A2248B52B200A0D11E /* 739. Daily Temperatures */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "739. Daily Temperatures"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F3297A4248B52B200A0D11E /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -282,6 +306,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8F329794248B2A9A00A0D11E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F32979F248B52B200A0D11E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -302,6 +340,8 @@
 				8F3297762489CA8200A0D11E /* 1128. Number of Equivalent Domino Pairs */,
 				8F329782248AAB0500A0D11E /* 528. Random Pick with Weight */,
 				8F32978D248AFAE800A0D11E /* 50. Pow(x, n) */,
+				8F329798248B2A9A00A0D11E /* 14. Longest Common Prefix */,
+				8F3297A3248B52B200A0D11E /* 739. Daily Temperatures */,
 				8F3295492481DFFC00A0D11E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -323,6 +363,8 @@
 				8F3297752489CA8200A0D11E /* 1128. Number of Equivalent Domino Pairs */,
 				8F329781248AAB0500A0D11E /* 528. Random Pick with Weight */,
 				8F32978C248AFAE700A0D11E /* 50. Pow(x, n) */,
+				8F329797248B2A9A00A0D11E /* 14. Longest Common Prefix */,
+				8F3297A2248B52B200A0D11E /* 739. Daily Temperatures */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -437,6 +479,22 @@
 				8F32978E248AFAE800A0D11E /* main.cpp */,
 			);
 			path = "50. Pow(x, n)";
+			sourceTree = "<group>";
+		};
+		8F329798248B2A9A00A0D11E /* 14. Longest Common Prefix */ = {
+			isa = PBXGroup;
+			children = (
+				8F329799248B2A9A00A0D11E /* main.cpp */,
+			);
+			path = "14. Longest Common Prefix";
+			sourceTree = "<group>";
+		};
+		8F3297A3248B52B200A0D11E /* 739. Daily Temperatures */ = {
+			isa = PBXGroup;
+			children = (
+				8F3297A4248B52B200A0D11E /* main.cpp */,
+			);
+			path = "739. Daily Temperatures";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -680,6 +738,40 @@
 			productReference = 8F32978C248AFAE700A0D11E /* 50. Pow(x, n) */;
 			productType = "com.apple.product-type.tool";
 		};
+		8F329796248B2A9A00A0D11E /* 14. Longest Common Prefix */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8F32979B248B2A9A00A0D11E /* Build configuration list for PBXNativeTarget "14. Longest Common Prefix" */;
+			buildPhases = (
+				8F329793248B2A9A00A0D11E /* Sources */,
+				8F329794248B2A9A00A0D11E /* Frameworks */,
+				8F329795248B2A9A00A0D11E /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "14. Longest Common Prefix";
+			productName = "14. Longest Common Prefix";
+			productReference = 8F329797248B2A9A00A0D11E /* 14. Longest Common Prefix */;
+			productType = "com.apple.product-type.tool";
+		};
+		8F3297A1248B52B200A0D11E /* 739. Daily Temperatures */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8F3297A6248B52B200A0D11E /* Build configuration list for PBXNativeTarget "739. Daily Temperatures" */;
+			buildPhases = (
+				8F32979E248B52B200A0D11E /* Sources */,
+				8F32979F248B52B200A0D11E /* Frameworks */,
+				8F3297A0248B52B200A0D11E /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "739. Daily Temperatures";
+			productName = "739. Daily Temperatures";
+			productReference = 8F3297A2248B52B200A0D11E /* 739. Daily Temperatures */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -731,6 +823,12 @@
 					8F32978B248AFAE700A0D11E = {
 						CreatedOnToolsVersion = 11.4.1;
 					};
+					8F329796248B2A9A00A0D11E = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
+					8F3297A1248B52B200A0D11E = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
 				};
 			};
 			buildConfigurationList = 8F3295432481DFFC00A0D11E /* Build configuration list for PBXProject "Problems_cpp" */;
@@ -760,6 +858,8 @@
 				8F3297742489CA8200A0D11E /* 1128. Number of Equivalent Domino Pairs */,
 				8F329780248AAB0500A0D11E /* 528. Random Pick with Weight */,
 				8F32978B248AFAE700A0D11E /* 50. Pow(x, n) */,
+				8F329796248B2A9A00A0D11E /* 14. Longest Common Prefix */,
+				8F3297A1248B52B200A0D11E /* 739. Daily Temperatures */,
 			);
 		};
 /* End PBXProject section */
@@ -874,6 +974,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				8F32978F248AFAE800A0D11E /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F329793248B2A9A00A0D11E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F32979A248B2A9A00A0D11E /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F32979E248B52B200A0D11E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F3297A5248B52B200A0D11E /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1213,6 +1329,38 @@
 			};
 			name = Release;
 		};
+		8F32979C248B2A9A00A0D11E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		8F32979D248B2A9A00A0D11E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		8F3297A7248B52B200A0D11E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		8F3297A8248B52B200A0D11E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1347,6 +1495,24 @@
 			buildConfigurations = (
 				8F329791248AFAE800A0D11E /* Debug */,
 				8F329792248AFAE800A0D11E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8F32979B248B2A9A00A0D11E /* Build configuration list for PBXNativeTarget "14. Longest Common Prefix" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8F32979C248B2A9A00A0D11E /* Debug */,
+				8F32979D248B2A9A00A0D11E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8F3297A6248B52B200A0D11E /* Build configuration list for PBXNativeTarget "739. Daily Temperatures" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8F3297A7248B52B200A0D11E /* Debug */,
+				8F3297A8248B52B200A0D11E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
