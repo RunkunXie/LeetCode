@@ -2,17 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="766eb65a-8252-4728-8244-1f90b6c00731" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/1464. Maximum Product of Two Elements in an Array.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Problems_cpp/101. Symmetric Tree/main.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Problems_cpp/1465. Maximum Area of a Piece of Cake After Horizontal and Vertical Cuts/main.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Problems_cpp/1466. Reorder Routes to Make All Paths Lead to the City Zero/main.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Problems_cpp/463. Island Perimeter/main.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Problems_cpp/14. Longest Common Prefix/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../Problems_cpp/14. Longest Common Prefix/main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Problems_cpp/406. Queue Reconstruction by Height/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../Problems_cpp/406. Queue Reconstruction by Height/main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Problems_cpp/Problems_cpp.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/../Problems_cpp/Problems_cpp.xcodeproj/project.pbxproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Problems_cpp/Problems_cpp.xcodeproj/project.xcworkspace/xcuserdata/vincentxie.xcuserdatad/UserInterfaceState.xcuserstate" beforeDir="false" afterPath="$PROJECT_DIR$/../Problems_cpp/Problems_cpp.xcodeproj/project.xcworkspace/xcuserdata/vincentxie.xcuserdatad/UserInterfaceState.xcuserstate" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Problems_cpp/Problems_cpp.xcodeproj/xcuserdata/vincentxie.xcuserdatad/xcschemes/xcschememanagement.plist" beforeDir="false" afterPath="$PROJECT_DIR$/../Problems_cpp/Problems_cpp.xcodeproj/xcuserdata/vincentxie.xcuserdatad/xcschemes/xcschememanagement.plist" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
