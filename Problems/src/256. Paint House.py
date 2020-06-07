@@ -1,5 +1,5 @@
 class Solution:
-    """my dp sol (state machine?), time n"""
+    """my dp sol (state machine?), time 3*2*n = n"""
     def minCost(self, costs: List[List[int]]) -> int:
 
         if not costs:
