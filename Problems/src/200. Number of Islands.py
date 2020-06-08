@@ -43,32 +43,74 @@ class Solution:
     #     self.dfs(i, j + 1)
 
     """my dfs sol, faster than 98%"""
+    # def numIslands(self, grid: List[List[str]]) -> int:
+    #
+    #     if not grid:
+    #         return 0
+    #
+    #     m, n = len(grid), len(grid[0])
+    #     count = 0
+    #
+    #     def dfs(i, j):
+    #         grid[i][j] = '2'
+    #         if j > 0 and grid[i][j - 1] == '1':
+    #             dfs(i, j - 1)
+    #         if i < m - 1 and grid[i + 1][j] == '1':
+    #             dfs(i + 1, j)
+    #         if j < n - 1 and grid[i][j + 1] == '1':
+    #             dfs(i, j + 1)
+    #         if i > 0 and grid[i - 1][j] == '1':
+    #             dfs(i - 1, j)
+    #
+    #     for i in range(m):
+    #         for j in range(n):
+    #             if grid[i][j] == '1':
+    #                 dfs(i, j)
+    #                 count += 1
+    #
+    #     return count
+
+    """my dfs sol, 3rd attempt"""
     def numIslands(self, grid: List[List[str]]) -> int:
 
-        if not grid:
+        if not grid or not grid[0]:
             return 0
 
+        ans = 0
         m, n = len(grid), len(grid[0])
-        count = 0
+        direction = [(-1, 0), (0, 1), (1, 0), (0, -1)]
 
         def dfs(i, j):
+
+            if not (0 <= i < m and 0 <= j < n):
+                return
+
+            if grid[i][j] == '0' or grid[i][j] == '2':
+                return
+
             grid[i][j] = '2'
-            if j > 0 and grid[i][j - 1] == '1':
-                dfs(i, j - 1)
-            if i < m - 1 and grid[i + 1][j] == '1':
-                dfs(i + 1, j)
-            if j < n - 1 and grid[i][j + 1] == '1':
-                dfs(i, j + 1)
-            if i > 0 and grid[i - 1][j] == '1':
-                dfs(i - 1, j)
+            for di, dj in direction:
+                dfs(i + di, j + dj)
 
         for i in range(m):
             for j in range(n):
                 if grid[i][j] == '1':
+                    ans += 1
                     dfs(i, j)
-                    count += 1
 
-        return count
+        return ans
+
+    """online dfs sol, I like it"""
+    def numIslands(self, grid: List[List[str]]) -> int:
+
+        def sink(i, j):
+            if 0 <= i < len(grid) and 0 <= j < len(grid[i]) and grid[i][j] == '1':
+                grid[i][j] = '0'
+                list(map(sink, (i + 1, i - 1, i, i), (j, j, j + 1, j - 1)))
+                return 1
+            return 0
+
+        return sum(sink(i, j) for i in range(len(grid)) for j in range(len(grid[i])))
 
 
 grid = [["1", "1", "0", "0", "0"], ["1", "1", "0", "1", "0"], ["0", "0", "0", "0", "0"], ["0", "0", "0", "0", "1"]]
