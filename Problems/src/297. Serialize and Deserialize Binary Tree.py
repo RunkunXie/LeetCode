@@ -12,7 +12,7 @@ class Codec:
 
         :type root: TreeNode
         :rtype: str
-        """
+        """ 
 
         ans = []
         dq = deque([root])
