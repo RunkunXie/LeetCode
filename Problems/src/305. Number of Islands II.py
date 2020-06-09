@@ -66,6 +66,67 @@ class Solution:
         return res
 
     """
-        best runtime algorithm: 
+        best runtime algorithm in theory: 
         Weighted Quick-Union with Path Compression (WQUPC), time mn log*(mn)
     """
+
+"""
+    my WQUPC sol
+    use path compression is simpler and enough
+"""
+class UnionFind2D:
+
+    def __init__(self):
+        self.id = {}
+        self.sz = {}  # add weight
+        self.count = 0
+
+    def add(self, i, j):
+        self.id[i, j] = i, j
+        self.sz[i, j] = 1  # add weight
+        self.count += 1
+
+    def root(self, i, j):
+        while (i, j) != self.id[i, j]:
+            self.id[i, j] = self.id[self.id[i, j]]  # add path compression
+            i, j = self.id[i, j]
+        return i, j
+
+    def union(self, i, j, i2, j2):
+        r, r2 = self.root(i, j), self.root(i2, j2)
+        if r != r2:
+            if self.sz[r] < self.sz[r2]:  # add weight
+                r, r2 = r2, r
+            self.id[r2] = r
+            self.sz[r] += self.sz[r2]  # add weight
+            self.count -= 1
+
+
+class Solution:
+    def numIslands2(self, m: int, n: int, positions: List[List[int]]) -> List[int]:
+
+        ans = []
+        direction = [(-1, 0), (0, 1), (1, 0), (0, -1)]
+        u = UnionFind2D()
+
+        for i, j in positions:
+            if (i, j) not in u.id:
+                u.add(i, j)
+                for di, dj in direction:
+                    newi, newj = i + di, j + dj
+                    if 0 <= newi < m and 0 <= newj < n and (newi, newj) in u.id:
+                        u.union(i, j, newi, newj)
+            ans.append(u.count)
+
+        return ans
+
+
+
+
+
+
+
+
+
+
+
