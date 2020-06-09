@@ -4,6 +4,15 @@ from typing import List
 class Solution:
     """"""
 
+    """my sol, 2nd attempt"""
+    def subsets(self, nums: List[int]) -> List[List[int]]:
+
+        if not nums:
+            return [[]]
+
+        sub = self.subsets(nums[1:])
+        return [[nums[0]] + s for s in sub] + sub
+
     """recursion answer, time n * 2**n"""
     def subsets(self, nums: List[int]) -> List[List[int]]:
         n = len(nums)
