@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="766eb65a-8252-4728-8244-1f90b6c00731" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/35. Search Insert Position.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Lint 120. Word Ladder.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/46. Permutations.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/46. Permutations.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/47. Permutations II.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/47. Permutations II.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/78. Subsets.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/78. Subsets.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/90. Subsets II.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/90. Subsets II.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/35. Search Insert Position.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/35. Search Insert Position.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
