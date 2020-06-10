@@ -4,6 +4,40 @@ from typing import List
 class Solution:
     """"""
 
+    """my recursive sol, 2nd attempt"""
+    def permute(self, nums: List[int]) -> List[List[int]]:
+
+        if not nums:
+            return [[]]
+
+        ans = []
+        for i in range(len(nums)):
+            sub = self.permute(nums[:i] + nums[i + 1:])
+            ans += [[nums[i]] + s for s in sub]
+
+        return ans
+
+    """my dfs sol, 2nd attempt"""
+    def permute(self, nums: List[int]) -> List[List[int]]:
+
+        ans = []
+        visited = [False] * len(nums)
+
+        def dfs(path, count):
+
+            if count == len(nums):
+                ans.append(path[:])  # copy the path
+                return
+
+            for i in range(len(nums)):
+                if not visited[i]:
+                    visited[i] = True
+                    dfs(path + [nums[i]], count + 1)
+                    visited[i] = False
+
+        dfs([], 0)
+        return ans
+
     """online solution, recursion"""
     def permute(self, nums: List[int]) -> List[List[int]]:
 

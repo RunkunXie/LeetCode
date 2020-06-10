@@ -4,7 +4,19 @@ from typing import List
 class Solution:
     """"""
 
-    """my sol, 2nd attempt"""
+    """my dfs sol, modified from qishi"""
+    def subsets(self, nums: List[int]) -> List[List[int]]:
+        ans = []
+
+        def dfs(path, idx):
+            ans.append(path.copy())
+            for i in range(idx, len(nums)):
+                dfs(path + [nums[i]], i + 1)
+
+        dfs([], 0)
+        return ans
+
+    """my recursive sol, 2nd attempt"""
     def subsets(self, nums: List[int]) -> List[List[int]]:
 
         if not nums:
@@ -13,9 +25,18 @@ class Solution:
         sub = self.subsets(nums[1:])
         return [[nums[0]] + s for s in sub] + sub
 
+    """my iterative sol, 2nd attempt"""
+    def subsets(self, nums: List[int]) -> List[List[int]]:
+
+        ans = [[]]
+
+        for num in nums:
+            ans += [[num] + sub for sub in ans]
+
+        return ans
+
     """recursion answer, time n * 2**n"""
     def subsets(self, nums: List[int]) -> List[List[int]]:
-        n = len(nums)
         output = [[]]
 
         for num in nums:
