@@ -9,6 +9,7 @@ class Solution:
     @return: a list of lists of string
     """
 
+    """my bfs sol, save path in deque"""
     def findLadders(self, start, end, dict):
         # write your code here
 
