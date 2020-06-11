@@ -1,4 +1,17 @@
 class Solution:
+
+    """my top-down dp, 2nd attempt"""
+    def findTargetSumWays(self, nums: List[int], S: int) -> int:
+
+        @lru_cache(None)
+        def dp(i, target):
+            if i == -1:
+                return target == 0
+
+            return dp(i - 1, target + nums[i]) + dp(i - 1, target - nums[i])
+
+        return dp(len(nums) - 1, S)
+
     """my sol, bottom up dp"""
     #     def findTargetSumWays(self, nums: List[int], S: int) -> int:
 
@@ -20,7 +33,6 @@ class Solution:
     #         return dp[1000+S][n]
 
     """my sol, top-down dp"""
-
     def findTargetSumWays(self, nums: List[int], S: int) -> int:
 
         # corner case
