@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="766eb65a-8252-4728-8244-1f90b6c00731" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/290. Word Pattern.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/291. Word Pattern II.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/458. Poor Pigs.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/10. Regular Expression Matching.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/10. Regular Expression Matching.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/51. N-Queens.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/51. N-Queens.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/52. N-Queens II.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/52. N-Queens II.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
