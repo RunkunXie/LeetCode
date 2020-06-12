@@ -10,7 +10,7 @@ class Solution:
                 return
 
             for j in range(n):
-                if (j not in cols and i + j not in diags and i - j not in off_diags):
+                if j not in cols and i + j not in diags and i - j not in off_diags:
                     # put i-th queen at i-th row, cross-out board area
                     cols.add(j)
                     diags.add(i + j)

@@ -1,4 +1,119 @@
 class Solution:
+
+    """my top-down dp sol, 4th attempt"""
+    def isMatch(self, text, pattern):
+        s, p = text, pattern
+
+        @lru_cache(None)
+        def dp(i, j):
+
+            if j == -1:
+                return i == -1
+
+            elif i == -1:
+                return dp(i, j - 2) if j > 0 and p[j] == '*' else False
+
+            else:
+                if p[j] != '*':
+                    return dp(i - 1, j - 1) if p[j] in (s[i], '.') else False
+                else:
+                    if j == 0:
+                        return False
+                    elif p[j - 1] not in (s[i], '.'):
+                        return dp(i, j - 2)
+                    else:
+                        return dp(i, j - 2) or dp(i - 1, j)
+
+        return dp(len(s) - 1, len(p) - 1)
+
+    """my sol, bottom-up dp, forward, 2/3 attempt"""
+    def isMatch(self, text, pattern):
+
+        s, p = text, pattern
+        m, n = len(s), len(p)
+        dp = [[False] * (n + 1) for i in range(m + 1)]
+        dp[0][0] = True
+
+        for i in range(m + 1):
+            for j in range(1, n + 1):
+
+                if i == 0:
+                    if p[j - 1] != "*":
+                        ans = False
+                    else:
+                        ans = j >= 2 and dp[i][j - 2]
+
+                else:
+                    if p[j - 1] != "*":
+                        ans = p[j - 1] in [s[i - 1], '.'] and dp[i - 1][j - 1]
+                    else:
+                        if j == 1:
+                            ans = 0
+                        elif p[j - 2] in [s[i - 1], '.']:
+                            ans = dp[i][j - 2] or dp[i - 1][j]
+                        else:
+                            ans = dp[i][j - 2]
+
+                dp[i][j] = ans
+
+        return dp[m][n]
+
+    """Top-down dp backward solution."""
+    # def isMatch(self, s: str, p: str) -> bool:
+    #
+    #     memo = {}
+    #     m, n = len(s), len(p)
+    #
+    #     def dp(i, j):
+    #
+    #         # Top-down, save ans in memo
+    #         if (i, j) not in memo:
+    #
+    #             # solution
+    #             if j == n:
+    #                 ans = i == m
+    #
+    #             else:
+    #                 first_match = i < m and p[j] in [s[i], '.']
+    #
+    #                 if j + 1 < n and p[j + 1] == '*':
+    #                     ans = (dp(i, j + 2) or
+    #                            first_match and dp(i + 1, j))
+    #                 else:
+    #                     ans = first_match and dp(i + 1, j + 1)
+    #
+    #             memo[i, j] = ans
+    #
+    #         return memo[i, j]
+    #
+    #     return dp(0, 0)
+
+    """Bottom-up DP backward solution."""
+    # def isMatch(self, s: str, p: str) -> bool:
+    #
+    #     m, n = len(s), len(p)
+    #     dp = [[False] * (n+1) for i in range(m+1)]
+    #     dp[m][n] = True
+    #
+    #     for i in range(m, -1, -1):
+    #         for j in range(n, -1, -1):
+    #
+    #             if j == n:
+    #                 ans = i == m
+    #
+    #             else:
+    #                 first_match = i < m and p[j] in [s[i], '.']
+    #
+    #                 if j + 1 < n and p[j + 1] == '*':
+    #                     ans = (dp[i][j + 2] or first_match and dp[i + 1][j])
+    #                 else:
+    #                     ans = (first_match and dp[i + 1][j + 1])
+    #
+    #             dp[i][j] = ans
+    #
+    #     return dp[0][0]
+
+    """my initial attempt, wrong"""
     # def isMatch(self, s: str, p: str) -> bool:
     #     '''
     #     This answer is wrong, fail to consider '.*'
@@ -66,6 +181,7 @@ class Solution:
     #     else:
     #         return False
 
+    """my initial attempt wrong"""
     # def isMatch(self, s: str, p: str) -> bool:
     #     '''
     #     This is also a wrong answer. Wrong approach to recursive
@@ -130,13 +246,8 @@ class Solution:
     #             elif p[0] == '.':
     #                 return any([self.isMatch(s[i:], p[2:]) for i in range(len(s) + 1)])
 
+    """recursive ans"""
     # def isMatch(self, s: str, p: str) -> bool:
-    #     '''
-    #     recursive solution.
-    #     :param s:
-    #     :param p:
-    #     :return:
-    #     '''
     #     if not p:
     #         return not s
     #
@@ -148,127 +259,10 @@ class Solution:
     #     else:
     #         return first_match and self.isMatch(s[1:], p[1:])
 
-    # def isMatch(self, s: str, p: str) -> bool:
-    #     '''
-    #     faster recursive solution, modified to turn it to dp.
-    #     :param s:
-    #     :param p:
-    #     :return:
-    #     '''
-    #
-    #     memo = {}
-    #     m, n = len(s), len(p)
-    #
-    #     def dp(i, j):
-    #         if j == n:
-    #             return i == m
-    #
-    #         first_match = i < m and p[j] in [s[i], '.']
-    #
-    #         if j + 1 < n and p[j + 1] == '*':
-    #             return (dp(i, j+2) or
-    #                     first_match and dp(i+1, j))
-    #         else:
-    #             return first_match and dp(i+1, j+1)
-    #
-    #     return dp(0, 0)
 
-    def isMatch(self, s: str, p: str) -> bool:
-        '''
-        Top-down dp backward solution.
-        :param s:
-        :param p:
-        :return:
-        '''
 
-        memo = {}
-        m, n = len(s), len(p)
 
-        def dp(i, j):
 
-            # Top-down, save ans in memo
-            if (i, j) not in memo:
-
-                # solution
-                if j == n:
-                    ans = i == m
-
-                else:
-                    first_match = i < m and p[j] in [s[i], '.']
-
-                    if j + 1 < n and p[j + 1] == '*':
-                        ans = (dp(i, j + 2) or
-                               first_match and dp(i + 1, j))
-                    else:
-                        ans = first_match and dp(i + 1, j + 1)
-
-                memo[i, j] = ans
-
-            return memo[i, j]
-
-        return dp(0, 0)
-
-    def isMatch(self, s: str, p: str) -> bool:
-        """
-        Bottom-up DP backward solution.
-        :param s:
-        :param p:
-        :return:
-        """
-
-        m, n = len(s), len(p)
-        dp = [[False] * (n+1) for i in range(m+1)]
-        dp[m][n] = True
-
-        for i in range(m, -1, -1):
-            for j in range(n, -1, -1):
-
-                if j == n:
-                    ans = i == m
-
-                else:
-                    first_match = i < m and p[j] in [s[i], '.']
-
-                    if j + 1 < n and p[j + 1] == '*':
-                        ans = (dp[i][j + 2] or first_match and dp[i + 1][j])
-                    else:
-                        ans = (first_match and dp[i + 1][j + 1])
-
-                dp[i][j] = ans
-
-        return dp[0][0]
-
-    """my sol, bottom-up dp, forward"""
-    def isMatch(self, text, pattern):
-
-        s, p = text, pattern
-        m, n = len(s), len(p)
-        dp = [[False] * (n + 1) for i in range(m + 1)]
-        dp[0][0] = True
-
-        for i in range(m + 1):
-            for j in range(1, n + 1):
-
-                if i == 0:
-                    if p[j - 1] != "*":
-                        ans = False
-                    else:
-                        ans = j >= 2 and dp[i][j - 2]
-
-                else:
-                    if p[j - 1] != "*":
-                        ans = p[j - 1] in [s[i - 1], '.'] and dp[i - 1][j - 1]
-                    else:
-                        if j == 1:
-                            ans = 0
-                        elif p[j - 2] in [s[i - 1], '.']:
-                            ans = dp[i][j - 2] or dp[i - 1][j]
-                        else:
-                            ans = dp[i][j - 2]
-
-                dp[i][j] = ans
-
-        return dp[m][n]
 
 
 s = 'a'
