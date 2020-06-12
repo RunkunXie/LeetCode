@@ -1,20 +1,43 @@
 class Solution:
-    """online dp sol, time n^2"""
+
+    """my bisect sol modified from online sol, 2nd attempt, time nlogn"""
     def lengthOfLIS(self, nums: List[int]) -> int:
 
-        if not nums:
-            return 0
+        tails = []
+        for x in nums:
+            i = bisect_left(tails, x)
+            if i == len(tails): tails.append(x)
+            else: tails[i] = x
 
-        # dp[i]: Longest Increasing Subsequence of nums[0] ~ nums[i],
-        # which containing nums[i]
+        return len(tails)
+
+    """my bottom-up dp, 2nd attempt"""
+    def lengthOfLIS(self, nums: List[int]) -> int:
+
         dp = [1] * len(nums)
 
-        for i in range(1, len(nums)):
-            for j in range(i):
-                if nums[i] > nums[j]:
-                    dp[i] = max(dp[i], dp[j] + 1)
+        for j in range(1, len(nums)):
+            dp[j] = max(dp[i] + 1 if nums[i] < nums[j] else 1 for i in range(j))
 
-        return max(dp)
+        return max(dp) if dp else 0
+
+    """my top-down dp, 2nd attempt"""
+    def lengthOfLIS(self, nums: List[int]) -> int:
+
+        @lru_cache(None)
+        def dp(j):
+
+            ans = 1
+            if j == 0:
+                return ans
+
+            for i in range(j):
+                if nums[i] < nums[j]:
+                    ans = max(ans, dp(i) + 1)
+
+            return ans
+
+        return max(dp(j) for j in range(len(nums))) if nums else 0
 
     """TODO: online bi select sol, time nlogn"""
     def lengthOfLIS(self, nums: List[int]) -> int:
