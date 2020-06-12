@@ -5,6 +5,7 @@ class Solution:
         states = minutesToTest // minutesToDie + 1
         return ceil(log(buckets, states))
 
+
     """online sol"""
     def poorPigs(self, buckets: int, minutesToDie: int, minutesToTest: int) -> int:
         pigs = 0
