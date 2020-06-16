@@ -5,6 +5,18 @@
 #         self.next = None
 
 class Solution:
+
+    """my sol, 2nd attempt"""
+    def reverseList(self, head: ListNode) -> ListNode:
+
+        prev, curr, next = None, None, head
+
+        while next:
+            prev, curr, next = curr, next, next.next
+            curr.next = prev
+
+        return curr
+
     """online iterative, nice solution!"""
     def reverseList(self, head: ListNode) -> ListNode:
 
