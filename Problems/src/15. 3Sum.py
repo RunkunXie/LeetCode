@@ -2,6 +2,90 @@ from typing import List
 
 
 class Solution:
+
+    """my sol under ans, 2nd attempt"""
+    def threeSum(self, nums: List[int]) -> List[List[int]]:
+
+        ans = []
+        nums.sort()
+
+        def twoSum(num, i):
+            start, end = i, len(nums) - 1
+            while start < end:
+                cur = nums[start] + nums[end] + num
+                if cur < 0:
+                    start += 1
+                elif cur > 0:
+                    end -= 1
+                elif start > i and nums[start] == nums[start - 1]:
+                    start += 1
+                elif end < len(nums) - 1 and nums[end] == nums[end + 1]:
+                    end -= 1
+                else:
+                    ans.append([num, nums[start], nums[end]])
+                    start += 1
+                    end -= 1
+
+        for i, num in enumerate(nums):
+            if nums[i] > 0:
+                break
+            if i == 0 or nums[i] != nums[i - 1]:
+                twoSum(num, i + 1)
+
+        return ans
+
+    """my sol, 2nd attempt, slow"""
+    from bisect import bisect_left, bisect
+    class Solution:
+        def threeSum(self, nums: List[int]) -> List[List[int]]:
+
+            nums.sort()
+            ans, cur_sum, left_zero, right_zero = [], 0, bisect_left(nums, 0), bisect(nums, 0)
+            neg_set, pos_set = set(nums[:left_zero]), set(nums[right_zero:])
+            num_zeros = right_zero - left_zero
+
+            for n in neg_set:
+                start, end = right_zero, len(nums) - 1
+                while start < end:
+                    cur_sum = nums[start] + nums[end] + n
+                    if start > 0 and nums[start] == nums[start - 1]:
+                        start += 1
+                    elif end < len(nums) - 1 and nums[end] == nums[end + 1]:
+                        end -= 1
+                    elif cur_sum == 0:
+                        ans.append([n, nums[start], nums[end]])
+                        start += 1
+                        end -= 1
+                    elif cur_sum < 0:
+                        start += 1
+                    elif cur_sum > 0:
+                        end -= 1
+
+                if num_zeros and -n in pos_set:
+                    ans.append([n, 0, -n])
+
+            for p in pos_set:
+                start, end = 0, left_zero - 1
+                while start < end:
+                    cur_sum = nums[start] + nums[end] + p
+                    if start > 0 and nums[start] == nums[start - 1]:
+                        start += 1
+                    elif end < len(nums) - 1 and nums[end] == nums[end + 1]:
+                        end -= 1
+                    elif cur_sum == 0:
+                        ans.append([nums[start], nums[end], p])
+                        start += 1
+                        end -= 1
+                    elif cur_sum < 0:
+                        start += 1
+                    elif cur_sum > 0:
+                        end -= 1
+
+            if num_zeros >= 3:
+                ans.append([0, 0, 0])
+
+            return ans
+
     """ans, time n^2"""
     def threeSum(self, nums: List[int]) -> List[List[int]]:
         res = []
@@ -26,11 +110,7 @@ class Solution:
                 lo += 1
                 hi -= 1
 
-
-class Solution:
-    """"""
-
-    """my sol, time n^2"""
+    """my sol, 1st attempt, time n^2"""
     # def threeSum(self, nums: List[int]) -> List[List[int]]:
     #
     #     if len(nums) < 3:
