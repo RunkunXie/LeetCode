@@ -5,6 +5,17 @@
 #         self.next = None
 
 class Solution:
+
+    """my sol, 2nd attempt"""
+    def hasCycle(self, head: ListNode) -> bool:
+
+        slow = fast = head
+        while fast and fast.next:
+            slow, fast = slow.next, fast.next.next
+            if slow == fast:
+                return True
+        return False
+
     def hasCycle(self, head: ListNode) -> bool:
 
         if not head:

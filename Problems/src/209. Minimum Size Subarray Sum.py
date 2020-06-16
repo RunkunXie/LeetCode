@@ -1,4 +1,20 @@
 class Solution:
+    """my sol, 2nd attempt"""
+    def minSubArrayLen(self, s: int, nums: List[int]) -> int:
+
+        cur_sum, start, ans = 0, 0, float("inf")
+
+        for i, num in enumerate(nums):
+            cur_sum += num
+            while cur_sum - nums[start] >= s:
+                cur_sum -= nums[start]
+                start += 1
+
+            if cur_sum >= s:
+                ans = min(ans, i - start + 1)
+
+        return ans if ans != float("inf") else 0
+
     """my sol, two pointers, time n"""
     def minSubArrayLen(self, s: int, nums: List[int]) -> int:
 
