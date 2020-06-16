@@ -4,8 +4,34 @@ from typing import List
 class Solution:
     """"""
 
-    """my sol, time n^2"""
+    """my 2pointer sol, 2nd attempt, time n"""
+    def trap(self, height: List[int]) -> int:
 
+        if not height:
+            return 0
+
+        start, end, ans = 0, len(height) - 1, 0
+        h1, h2 = height[start], height[end]
+
+        while start < end:
+
+            if height[start] < height[end]:
+
+                if height[start] < h1:
+                    ans += h1 - height[start]
+                start += 1
+                h1 = max(h1, height[start])
+
+            else:
+
+                if height[end] < h2:
+                    ans += h2 - height[end]
+                end -= 1
+                h2 = max(h2, height[end])
+
+        return ans
+
+    """my sol, time n^2"""
     # def trap(self, height: List[int]) -> int:
     #
     #     if not height:
