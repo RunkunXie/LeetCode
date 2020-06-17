@@ -1,4 +1,27 @@
 class Solution:
+    """online sol, 2nd attempt"""
+    def isPalindrome(self, head):
+        fast = slow = head
+
+        # find the mid node - slow point to middle point
+        while fast and fast.next:
+            fast = fast.next.next
+            slow = slow.next
+
+        # reverse the second half
+        prev = None
+        while slow:
+            slow.next, prev, slow = prev, slow, slow.next
+
+        # compare the first and second half nodes
+        node = prev
+        while node:  # while node and head:
+            if node.val != head.val:
+                return False
+            node = node.next
+            head = head.next
+        return True
+
     """
         ans, time n, space 1
         learn how to find middle point, reverse linked list
