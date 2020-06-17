@@ -2,7 +2,30 @@ from collections import Counter
 
 
 class Solution:
-    """"""
+    """my sol, 3rd attempt, fastest 96ms"""
+    def minWindow(self, s: str, t: str) -> str:
+
+        tar_c, cur_c = Counter(t), defaultdict(int)
+        tar_num, cur_num, ans = len(t), 0, None
+
+        start = 0
+        for end, char in enumerate(s):
+            if char in tar_c:
+                if tar_c[char] > cur_c[char]:
+                    cur_num += 1
+                cur_c[char] += 1
+
+            while cur_num == tar_num:
+                if ans is None or len(ans) > end - start:
+                    ans = s[start:end + 1]
+
+                if s[start] in cur_c:
+                    if tar_c[s[start]] == cur_c[s[start]]:
+                        cur_num -= 1
+                    cur_c[s[start]] -= 1
+                start += 1
+
+        return ans if ans else ""
 
     """my sol"""
     # def minWindow(self, s: str, t: str) -> str:
@@ -108,7 +131,6 @@ class Solution:
         return "" if ans[0] == float("inf") else s[ans[1]: ans[2] + 1]
 
     """ans, Optimized Sliding Window, time s+t"""
-
     def minWindow(self, s: str, t: str) -> str:
 
         if not t or not s:
